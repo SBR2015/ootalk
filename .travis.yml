@@ -1,0 +1,27 @@
+language: ruby
+rvm:
+- 2.2.2
+
+# bundler_args: "--without development production"
+
+before_install:
+  - gem update --system
+  - gem --version
+
+
+# script:
+#   - bundle exec rake db:drop db:create db:migrate
+#   - bundle exec rspec spec
+#
+# deploy:
+#   provider: heroku
+#   api_key: #d2e20278-8dee-46f1-8eb1-4ee708916afe
+#     secure: nYF3j2ihy6CKYnPgzW/6Dniu2kqX+/J7XTFXkyA6EmPNHTNKbJ/kU6+qdZ2AqqBFlpTkopCpsJ5+K58g38EG2vq9sCzKpsmv9i+mhixIq+K3Sqk45DWaSN4EWl+oRQKPM8K0xp69yRrjHE6u+2yUFa1nZNdeW4CxlMyNgCbSbt4=
+#   app: tranquil-hollows-4999
+#   on:
+#     repo: Olivia-tou/TraRe
+#   run:
+#     - "rake db:migrate"
+#
+# notifications:
+#   slack: chubachi-pt-2015:MylvLlE5HOwVIZKXYYcrSjAn
