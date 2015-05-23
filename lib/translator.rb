@@ -1,7 +1,8 @@
 require 'yaml'
 class Translator
   def self.run
-    input = yield(Input.new)
+    input = Input.new
+    yield(input)
     @language_map = YAML.load(File.open("../config/config.#{input.language}.yaml").read)
     @language_map.each do |key, value|
       input.text.gsub!(/#{key}/, " #{value} ")
