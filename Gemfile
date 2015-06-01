@@ -43,8 +43,7 @@ group :development, :test do
 #   gem 'web-console', '~> 2.0'
 #
   # BDD
-  gem 'rspec'
-#   gem 'rspec-rails', '~> 3.2.1'
+  gem 'rspec-rails', '~> 3.2.1'
 #   gem 'spring-commands-rspec'
 #   gem 'shoulda-matchers', require: false
 #   gem 'database_cleaner'
