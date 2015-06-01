@@ -4,6 +4,6 @@ class Variable < Expression
 
   private
 
-    id = ""
+    id = nil
 
 end
