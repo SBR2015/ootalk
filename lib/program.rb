@@ -3,6 +3,7 @@ require './instruction'
 class Program
   private
 
-    body = Instruction.new
-
+    def initialize()
+      @body = Instruction.new
+    end
 end
