@@ -1,6 +1,8 @@
 OoTalk
 ========
 
+[![Build Status](https://travis-ci.org/SBR2015/OoTalk.svg?branch=master)](https://travis-ci.org/SBR2015/OoTalk)
+
 OoTalkのエンジンです
 
 先生
@@ -23,5 +25,5 @@ Team members
 
 App information
 ---------------
-- Travis CI
+- [Travis CI](https://travis-ci.org/SBR2015/OoTalk)
 - [産業技術大学院大学](http://aiit.ac.jp/)

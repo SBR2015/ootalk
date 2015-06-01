@@ -31,7 +31,7 @@ source 'https://rubygems.org'
 # # Use Capistrano for deployment
 # # gem 'capistrano-rails', group: :development
 #
-# group :development, :test do
+group :development, :test do
 #
 #   # Use sqlite3 as the database for Active Record
 #   gem 'sqlite3'
@@ -42,8 +42,8 @@ source 'https://rubygems.org'
 #   # Access an IRB console on exception pages or by using <%= console %> in views
 #   gem 'web-console', '~> 2.0'
 #
-#   # BDD
-   gem 'rspec-rails', '~> 3.2.1'
+  # BDD
+  gem 'rspec-rails', '~> 3.2.1'
 #   gem 'spring-commands-rspec'
 #   gem 'shoulda-matchers', require: false
 #   gem 'database_cleaner'
@@ -53,7 +53,7 @@ source 'https://rubygems.org'
 #   gem 'guard-livereload'
 #   gem 'rb-fsevent'
 #
-# end
+end
 #
 #  group :development do
 #   # Use travis CI command
