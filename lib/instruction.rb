@@ -1,2 +1,2 @@
-class Instruction < Program
+class Instruction
 end
