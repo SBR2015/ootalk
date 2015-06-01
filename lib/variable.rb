@@ -4,6 +4,7 @@ class Variable < Expression
 
   private
 
-    id = nil
-
+    def initialize()
+      @id = nil
+    end
 end

@@ -6,8 +6,9 @@ class Conditional < Instruction
 
   private
 
-    thenbranch = Instruction.new
-    elsebranch = Instruction.new
-    test = Expression.new
-
+    def initialize()
+      @thenbranch = Instruction.new
+      @elsebranch = Instruction.new
+      @test = Expression.new
+    end
 end

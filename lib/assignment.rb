@@ -6,7 +6,8 @@ class Assignment < Instruction
 
   private
 
-    target = Variable.new
-    source = Expression.new
-
+    def initialize()
+      @target = Variable.new
+      @source = Expression.new
+    end
 end

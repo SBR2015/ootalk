@@ -4,5 +4,7 @@ class Constant < Expression
 
   private
 
-    value = nil
+    def initialize()
+      @value = nil
+    end
 end
