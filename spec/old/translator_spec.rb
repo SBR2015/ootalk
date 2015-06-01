@@ -1,4 +1,4 @@
-require_relative '../lib/translator'
+require_relative '../../lib/old/translator'
 
 describe 'Translator test' do
   it '日本語コードが実行されること' do
@@ -9,4 +9,3 @@ describe 'Translator test' do
     expect(result).to eq "Three"
   end
 end
-
