@@ -9,9 +9,11 @@ require './plus'
 
 a = Plus.new(1,2)
 b = Plus.new(3,4)
+c = Plus.new(a.exec,b.exec)
+d = Plus.new(c,b)
 
-c = Plus.new(a.execute,b.execute)
-
-puts "a = #{a.execute}"
-puts "b = #{b.execute}"
-puts "a+b = #{c.execute}"
+puts "a = #{a.exec}"
+puts "b = #{b.exec}"
+puts "a + b = #{c.exec}"
+puts "c = " + c.to_s
+puts "d = " + d.to_s
