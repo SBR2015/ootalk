@@ -1,4 +1,4 @@
-require './expression'
+require File.dirname(__FILE__) + '/expression'
 
 class Constant < Expression
 
