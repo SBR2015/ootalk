@@ -12,7 +12,7 @@ class Plus < ArithmeticOp
   public
 
     def exec
-      @left + @right
+      @left.exec + @right.exec
     end
 
     def to_s
