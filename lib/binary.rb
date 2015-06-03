@@ -1,5 +1,5 @@
-require './expression'
-require './operator'
+require File.dirname(__FILE__) + '/expression'
+require File.dirname(__FILE__) + '/operator'
 
 class Binary < Expression
 

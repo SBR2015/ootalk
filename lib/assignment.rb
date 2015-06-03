@@ -1,6 +1,6 @@
-require './instruction'
-require './variable'
-require './expression'
+require File.dirname(__FILE__) + '/instruction'
+require File.dirname(__FILE__) + '/variable'
+require File.dirname(__FILE__) + '/expression'
 
 class Assignment < Instruction
 

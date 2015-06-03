@@ -1,13 +1,9 @@
 #!/usr/bin/env ruby
-require './program'
-require './plus'
-require './constant'
-require './arithmeticOp'
 
-
-# Dir[File.expand_path('./lib', __FILE__) << '/*.rb'].each do |file|
-#   require file
-# end
+# Libraryの読み込み
+Dir[File.expand_path('../lib', __FILE__) << '/*.rb'].each do |file|
+  require file
+end
 
 # p = Program.new
 
