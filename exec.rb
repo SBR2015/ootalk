@@ -8,21 +8,50 @@ end
 # p = Program.new
 
 # 定数の宣言
-cons1 = Constant.new(1)
-cons2 = Constant.new(2)
-cons3 = Constant.new(3)
+num1 = Constant.new(1)
+num2 = Constant.new(2)
+num3 = Constant.new(3)
+num4 = Constant.new(4)
+num10 = Constant.new(10)
+
+# 演算子の宣言
+# operator = Array.new(100){Operator.new}
+operator = Array.new
 
 # 足す
-a = Plus.new(cons1,cons2)
-b = Plus.new(cons1,cons3)
-c = Plus.new(a,b)
-# d = Plus.new(c,b)
+add1 = Plus.new(num1, num2)
+add2 = Plus.new(num1, num3)
+add3 = Plus.new(add1, add2)
+
+# 掛ける
+times1 = Times.new(num2, num3)
+
+# 引く
+minus1 = Minus.new(num3, num1)
+
+# 割る
+divide1 = Divide.new(num4, num2)
+
+# 余り
+surplus1 = Surplus.new(num3, num2)
+
+# べき乗
+power1 = Power.new(num2, num3)
+
+# 対数
+logarithm1 = Logarithm.new(num10, num3)
 
 # 実行
-puts "a = #{a.exec}"
-puts "b = #{b.exec}"
-puts "a + b = #{c.exec}"
+operator.push "#{add1.to_s} = #{add1.exec}"
+operator.push "#{add2.to_s} = #{add2.exec}"
+operator.push "#{add3.to_s} = #{add3.exec}"
+operator.push "#{times1.to_s} = #{times1.exec}"
+operator.push "#{minus1.to_s} = #{minus1.exec}"
+operator.push "#{divide1.to_s} = #{divide1.exec}"
+operator.push "#{surplus1.to_s} = #{surplus1.exec}"
+operator.push "#{power1.to_s} = #{power1.exec}"
+operator.push "#{logarithm1.to_s} = #{logarithm1.exec}"
 
-# コンパイル
-puts "a + b = #{c.to_s}"
-# puts "d = " + d.to_s
+operator.each do |o|
+  puts o
+end

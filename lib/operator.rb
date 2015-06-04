@@ -2,7 +2,7 @@ class Operator
 
   private
 
-    def initialize(left, right)
+    def initialize(left = nil, right = nil)
       @left = left
       @right = right
       @operator = '?'
