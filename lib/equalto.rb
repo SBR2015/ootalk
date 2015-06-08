@@ -1,6 +1,6 @@
-require File.dirname(__FILE__) + '/relationlOp'
+require File.dirname(__FILE__) + '/relationalOp'
 
-class EqualTo < RelationlOp
+class EqualTo < RelationalOp
 
     def initialize(left,right)
       super
