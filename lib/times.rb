@@ -1,18 +1,12 @@
 require File.dirname(__FILE__) + '/arithmeticOp'
 
 class Times < ArithmeticOp
+  def initialize(left,right)
+    super
+    @operator = '*'
+  end
 
-  private
-
-    def initialize(left,right)
-      super
-      @operator = '*'
-    end
-
-  public
-
-    def exec
-      @left.exec * @right.exec
-    end
-
+  def exec
+    @left.exec * @right.exec
+  end
 end
