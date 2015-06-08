@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/RelationalOp'
+require File.dirname(__FILE__) + '/relationalop'
 
 class LessThan < RelationalOp
 

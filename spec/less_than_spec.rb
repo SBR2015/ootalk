@@ -1,5 +1,4 @@
 require 'spec_helper'
-require_relative '../lib/relationalop.rb'
 require_relative '../lib/less_than.rb'
 require_relative '../lib/constant.rb'
 
