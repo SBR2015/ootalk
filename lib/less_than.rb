@@ -1,6 +1,6 @@
-require File.dirname(__FILE__) + '/arithmeticOp'
+require File.dirname(__FILE__) + '/RelationalOp'
 
-class LessThan < ArithmeticOp
+class LessThan < RelationalOp
 
     def initialize(left, right)
       super
