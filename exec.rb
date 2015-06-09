@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
 
 # ライブラリの読み込み
 Dir[File.expand_path('../lib', __FILE__) << '/*.rb'].each do |file|
@@ -41,6 +42,10 @@ power1 = Power.new(num2, num3)
 # 対数
 logarithm1 = Logarithm.new(num10, num3)
 
+#等しくない
+notequal1 = NotEqual.new(num1, num2)
+notequal2 = NotEqual.new(num2, num2)
+
 # 実行
 operator.push "#{add1.to_s} = #{add1.exec}"
 operator.push "#{add2.to_s} = #{add2.exec}"
@@ -51,6 +56,8 @@ operator.push "#{divide1.to_s} = #{divide1.exec}"
 operator.push "#{surplus1.to_s} = #{surplus1.exec}"
 operator.push "#{power1.to_s} = #{power1.exec}"
 operator.push "#{logarithm1.to_s} = #{logarithm1.exec}"
+operator.push "#{notequal1.to_s} = #{notequal1.exec}"
+operator.push "#{notequal2.to_s} = #{notequal2.exec}"
 
 operator.each do |o|
   puts o
