@@ -8,7 +8,7 @@ describe 'Boolean Operator' do
   end
 
   it "to_s" do
-    bop = BooleanlOp.new
+    bop = BooleanOp.new
     expect(bop.to_s.length).to be >= 0
   end
 
