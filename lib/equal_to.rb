@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/relationalOp'
+require File.dirname(__FILE__) + '/relationalop'
 
 class EqualTo < RelationalOp
 
