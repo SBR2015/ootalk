@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../lib/equal＿to.rb'
+require_relative '../lib/equal_to.rb'
 require_relative '../lib/constant.rb'
 
 
