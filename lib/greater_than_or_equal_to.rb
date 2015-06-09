@@ -8,6 +8,6 @@ class GreaterThanOrEqualTo < RelationalOp
   end
 
   def exec
-    @left.exec >= right.exec
+    @left.exec >= @right.exec
   end
 end
