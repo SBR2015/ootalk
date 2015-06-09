@@ -5,7 +5,7 @@ class Xor < BooleanOp
 
     def initialize(left,right)
       super
-      @operator = 'XOR'
+      @operator = '^'
     end
 
   public
