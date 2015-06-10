@@ -14,6 +14,5 @@ class Operator
       # どっちで書くかは要検討
       "(#{@left}#{@operator}#{@right})"
       # "(" + @left.to_s + @operator.to_s + @right.to_s + ")"
-    end
-
+    end  
 end
