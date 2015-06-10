@@ -1,3 +1,7 @@
 ja:
-  Plus: "@left と @right を足す"
-  Minus: "@left から @right を引く"
+  Plus:
+    name: "足す"
+    string: "@left と @right を足す"
+  Minus:
+    name: "引く"
+    string: "@left から @right を引く"
