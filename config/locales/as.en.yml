@@ -1,0 +1,7 @@
+en:
+  Plus:
+    name: "Add"
+    string: "add @right to @left"
+  Minus:
+    name: "Subtract"
+    string: "subtract @right from @left"
