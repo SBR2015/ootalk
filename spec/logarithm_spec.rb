@@ -31,7 +31,7 @@ describe "logarithms" do
     expect(logarithms3.exec).to be == 2.0
     expect(logarithms4.exec).to be == -0.6989700043360187
     expect(logarithms5.exec).to be == -0.3413030972429927
-    expect(logarithms6.exec).to raise_error 
+    expect(logarithms6.exec).to raise_error (Math::DomainError)
 
   end
 end
