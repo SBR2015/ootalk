@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
 
 # ライブラリの読み込み
 Dir[File.expand_path('../lib', __FILE__) << '/*.rb'].each do |file|
@@ -12,6 +13,9 @@ num1 = Constant.new(1)
 num2 = Constant.new(2)
 num3 = Constant.new(3)
 num4 = Constant.new(4)
+num5 = Constant.new(0.04)
+num6 = Constant.new(0.2)
+num8 = Constant.new(8)
 num10 = Constant.new(10)
 
 # 演算子の宣言
@@ -40,6 +44,9 @@ power1 = Power.new(num2, num3)
 
 # 対数
 logarithm1 = Logarithm.new(num10, num3)
+logarithm2 = Logarithm.new(num5, num3)
+logarithm3 = Logarithm.new(num2, num8)
+logarithm4 = Logarithm.new(num10, num6)
 
 #等しくない
 notequal1 = NotEqual.new(num1, num2)
@@ -55,6 +62,9 @@ operator.push "#{divide1.to_s} = #{divide1.exec}"
 operator.push "#{surplus1.to_s} = #{surplus1.exec}"
 operator.push "#{power1.to_s} = #{power1.exec}"
 operator.push "#{logarithm1.to_s} = #{logarithm1.exec}"
+operator.push "#{logarithm2.to_s} = #{logarithm2.exec}"
+operator.push "#{logarithm3.to_s} = #{logarithm3.exec}"
+operator.push "#{logarithm4.to_s} = #{logarithm4.exec}"
 operator.push "#{notequal1.to_s} = #{notequal1.exec}"
 operator.push "#{notequal2.to_s} = #{notequal2.exec}"
 
