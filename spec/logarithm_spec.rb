@@ -24,11 +24,11 @@ describe "logarithms" do
     logarithms4 = Logarithm.new(cons1, cons5)
     logarithms5 = Logarithm.new(cons6, cons3)
 
-    expect(logarithms1.exec).to == 0.47712125471966244
-    expect(logarithms2.exec).to == 3.0 
-    expect(logarithms3.exec).to == 2.0
-    expect(logarithms4.exec).to == -0.6989700043360187
-    expect(logarithms5.exec).to == -0.3413030972429927
+    expect(logarithms1.exec).to be == 0.47712125471966244
+    expect(logarithms2.exec).to be == 3.0 
+    expect(logarithms3.exec).to be == 2.0
+    expect(logarithms4.exec).to be == -0.6989700043360187
+    expect(logarithms5.exec).to be == -0.3413030972429927
 
   end
 end
