@@ -1,7 +1,10 @@
 ja:
   Plus:
     name: "足す"
-    string: "@left と @right を足す"
+    string: "@left\tと\t@right\tを足す"
   Minus:
     name: "引く"
-    string: "@left から @right を引く"
+    string: "@left\tから\t@right\tを引く"
+  Times:
+    name: "掛ける"
+    string: "@left\tと\t@right\tを掛ける"
