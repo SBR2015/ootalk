@@ -7,4 +7,4 @@ before_install:
   - gem --version
 
 script:
-  - CODECLIMATE_REPO_TOKEN=<%= ENV['CODECLIMATE_REPO_TOKEN'] %> bundle exec rake spec
+  - bundle exec rake spec
