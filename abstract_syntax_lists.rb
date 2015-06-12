@@ -1,13 +1,10 @@
-#!/usr/bin/env ruby
-
 # ライブラリの読み込み
-require 'json'
 require 'i18n'
 I18n.load_path = Dir[File.expand_path('../config/locales', __FILE__) << '/*.yml']
 
 class AbstractSyntaxLists
 
-  def self.create(locale)
+  def self.create(locale=:en)
     # 言語設定
     I18n.locale = locale
 
