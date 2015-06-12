@@ -21,17 +21,17 @@ class AbstractSyntaxLists
     end
 
     # 出力用の配列
-    lang_json = []
+    options = []
 
     class_all_lists.each_with_index do |c, i|
       this_class = {}
       this_class[:id] = i + 1
       this_class[:name] = I18n.t("#{c}.name")
       this_class[:string] = I18n.t("#{c}.string")
-      lang_json.push(this_class)
+      options.push(this_class)
     end
 
-    return lang_json
+    return options
 
   end
 
