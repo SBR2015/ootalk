@@ -1,6 +1,6 @@
 # ライブラリの読み込み
 require 'i18n'
-I18n.load_path = Dir[File.expand_path('../config/locales', __FILE__) << '/*.yml']
+I18n.load_path = Dir[File.expand_path('../../config/locales', __FILE__) << '/*.yml']
 
 class AbstractSyntaxLists
 
@@ -10,7 +10,7 @@ class AbstractSyntaxLists
 
     # 抽象文法のリストを取得
     abstract_syntax = YAML.load_file(File.dirname(__FILE__) +
-                                    "/config/locales/as.#{I18n.locale.to_s}.yml")
+                                    "/../config/locales/as.#{I18n.locale.to_s}.yml")
 
     # 抽象文法のクラス一覧を取得
     class_all_lists = abstract_syntax[I18n.locale.to_s].map do |key, value|
