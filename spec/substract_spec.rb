@@ -1,6 +1,6 @@
 require 'spec_helper'
 require_relative '../lib/constant.rb'
-require_relative '../lib/Substract.rb'
+require_relative '../lib/substract.rb'
 
 describe "substract" do
   it "new" do
