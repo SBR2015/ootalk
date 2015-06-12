@@ -3,6 +3,7 @@ OoTalk
 
 [![Build Status](https://travis-ci.org/SBR2015/OoTalk.svg?branch=master)](https://travis-ci.org/SBR2015/OoTalk)
 [![Code Climate](https://codeclimate.com/github/SBR2015/OoTalk/badges/gpa.svg)](https://codeclimate.com/github/SBR2015/OoTalk)
+[![Test Coverage](https://codeclimate.com/github/SBR2015/OoTalk/badges/coverage.svg)](https://codeclimate.com/github/SBR2015/OoTalk/coverage)
 
 OoTalkのエンジンです
 
