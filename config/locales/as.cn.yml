@@ -1,0 +1,55 @@
+cn:
+  Plus:
+    name: "取和"
+    string: "取\t@left\t加上\t@right\t的和"
+  Minus:
+    name: "取差"
+    string: "取\t@left\t减去\t@right\t的差"
+  Times:
+    name: "取积"
+    string: "取\t@left\t乘以\t@right\t的积"
+  Divide:
+    name: "取商"
+    string: "取\t@left\t除以\t@right\t的商"
+  Surplus:
+    name: "取余"
+    string: "取\t@left\t除以\t@right\t的余"
+  Logarithm:
+    name: "取对数"
+    string: "取以\t@left\t为底\t@right\t的对数"
+  Power:
+    name: "取幂"
+    string: "取\t@left\t的\t@right\t次幂"
+  And:
+    name: "与"
+    string: "@left\t与\t@right"
+  Nand:
+    name: "非与"
+    string: "@left\t非与\t@right"
+  Or:
+    name: "或"
+    string: "@left\t或\t@right"
+  Nor:
+    name: "非或"
+    string: "@left\t非或\t@right"
+  Xor:
+    name: "异或"
+    string: "@left\t异或\t@right"
+  EqualTo:
+    name: "等于"
+    string: "@left\t等于\t@right"
+  NotEqual:
+    name: "非等于"
+    string: "@left\t非等于\t@right"
+  GreaterThan:
+    name: "大于"
+    string: "@left\t大于\t@right"
+  GreaterThanOrEqualTo:
+    name: "大于等于"
+    string: "@left\t大于等于\t@right"
+  LessThan:
+    name: "小于"
+    string: "@left\t小于\t@right"
+  LessThanOrEqualTo:
+    name: "小于等于"
+    string: "@left\t小于等于\t@right"
