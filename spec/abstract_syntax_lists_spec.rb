@@ -1,6 +1,5 @@
 require 'spec_helper'
-require_relative '../abstract_syntax_lists'
-require 'i18n'
+require_relative '../lib/abstract_syntax_lists'
 
 describe 'AbstractSyntaxLists' do
 
