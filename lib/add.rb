@@ -1,15 +1,11 @@
 require File.dirname(__FILE__) + '/arithmeticOp'
 
-class Plus < ArithmeticOp
-
-  private
+class Add < ArithmeticOp
 
     def initialize(left,right)
       super
       @operator = '+'
     end
-
-  public
 
     def exec
       @left.exec + @right.exec
