@@ -23,6 +23,7 @@ class AbstractSyntaxLists
     class_all_lists.each_with_index do |c, i|
       this_class = {}
       this_class[:id] = i + 1
+      this_class[:class_name] = c
       this_class[:name] = I18n.t("#{c}.name")
       this_class[:string] = I18n.t("#{c}.string")
       options.push(this_class)
