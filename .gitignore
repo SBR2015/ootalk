@@ -73,3 +73,5 @@ Desktop.ini
 
 # binstubs
 /.bin/
+
+/pkg

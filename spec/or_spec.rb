@@ -1,27 +1,25 @@
 require 'spec_helper'
-require_relative '../lib/or.rb'
-require_relative '../lib/constant.rb'
+require 'ootalk/or'
 
 describe 'Or' do
-  it "new" do
-    o = Or.new(Constant.new(true), Constant.new(false))
+  it 'new' do
+    o = OoTalk::Or.new(OoTalk::Constant.new(true), OoTalk::Constant.new(false))
     expect(o).to_not be_nil
   end
 
-  it "to_s" do
-    o = Or.new(Constant.new(true), Constant.new(false))
+  it 'to_s' do
+    o = OoTalk::Or.new(OoTalk::Constant.new(true), OoTalk::Constant.new(false))
     expect(o.to_s.length).to be >= 0
   end
 
-  it "exec" do
-    o = Or.new(Constant.new(true), Constant.new(true))
+  it 'exec' do
+    o = OoTalk::Or.new(OoTalk::Constant.new(true), OoTalk::Constant.new(true))
     expect(o.exec).to be_truthy
-    o = Or.new(Constant.new(true), Constant.new(false))
+    o = OoTalk::Or.new(OoTalk::Constant.new(true), OoTalk::Constant.new(false))
     expect(o.exec).to be_truthy
-    o = Or.new(Constant.new(false), Constant.new(true))
+    o = OoTalk::Or.new(OoTalk::Constant.new(false), OoTalk::Constant.new(true))
     expect(o.exec).to be_truthy
-    o = Or.new(Constant.new(false), Constant.new(false))
+    o = OoTalk::Or.new(OoTalk::Constant.new(false), OoTalk::Constant.new(false))
     expect(o.exec).to be_falsey
   end
-
 end

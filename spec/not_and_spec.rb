@@ -1,27 +1,25 @@
 require 'spec_helper'
-require_relative '../lib/not_and.rb'
-require_relative '../lib/constant.rb'
+require 'ootalk/not_and'
 
 describe 'NotAnd' do
-  it "new" do
-    na = Nand.new(Constant.new(true), Constant.new(false))
+  it 'new' do
+    na = OoTalk::Nand.new(OoTalk::Constant.new(true), OoTalk::Constant.new(false))
     expect(na).to_not be_nil
   end
 
-  it "to_s" do
-    na = Nand.new(Constant.new(true), Constant.new(false))
+  it 'to_s' do
+    na = OoTalk::Nand.new(OoTalk::Constant.new(true), OoTalk::Constant.new(false))
     expect(na.to_s.length).to be >= 0
   end
 
-  it "exec" do
-    na = Nand.new(Constant.new(true), Constant.new(true))
+  it 'exec' do
+    na = OoTalk::Nand.new(OoTalk::Constant.new(true), OoTalk::Constant.new(true))
     expect(na.exec).to be_falsey
-    na = Nand.new(Constant.new(true), Constant.new(false))
+    na = OoTalk::Nand.new(OoTalk::Constant.new(true), OoTalk::Constant.new(false))
     expect(na.exec).to be_truthy
-    na = Nand.new(Constant.new(false), Constant.new(true))
+    na = OoTalk::Nand.new(OoTalk::Constant.new(false), OoTalk::Constant.new(true))
     expect(na.exec).to be_truthy
-    na = Nand.new(Constant.new(false), Constant.new(false))
+    na = OoTalk::Nand.new(OoTalk::Constant.new(false), OoTalk::Constant.new(false))
     expect(na.exec).to be_truthy
   end
-
 end
