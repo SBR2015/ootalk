@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    OoTalk (0.0.1)
+    ootalk (0.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -83,10 +83,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  OoTalk!
   bundler (~> 1.9)
   codeclimate-test-reporter
   i18n
+  ootalk!
   rake (~> 10.0)
   rspec
   travis

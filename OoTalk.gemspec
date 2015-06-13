@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'ootalk/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'OoTalk'
+  spec.name          = 'ootalk'
   spec.version       = OoTalk::VERSION
   spec.authors       = ['SBR2015']
   spec.email         = ['SBR2015@example.com']
