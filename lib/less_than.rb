@@ -1,6 +1,6 @@
-require File.dirname(__FILE__) + '/relationalop'
+require File.dirname(__FILE__) + '/operator'
 
-class LessThan < RelationalOp
+class LessThan < Operator
 
     def initialize(left, right)
       super
