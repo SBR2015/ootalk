@@ -22,15 +22,15 @@ num10 = Constant.new(10)
 operator = Array.new
 
 # 足す
-add1 = Plus.new(num1, num2)
-add2 = Plus.new(num1, num3)
-add3 = Plus.new(add1, add2)
+add1 = Add.new(num1, num2)
+add2 = Add.new(num1, num3)
+add3 = Add.new(add1, add2)
 
 # 掛ける
 times1 = Times.new(num2, num3)
 
 # 引く
-minus1 = Minus.new(num3, num1)
+minus1 = Substract.new(num3, num1)
 
 # 割る
 divide1 = Divide.new(num4, num2)
