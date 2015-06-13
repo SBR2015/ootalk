@@ -1,25 +1,25 @@
 cn:
   Plus:
-    name: "取和"
-    string: "取\t@left\t加上\t@right\t的和"
+    name: "加上"
+    string: "求\t@left\t加上\t@right\t的和"
   Minus:
-    name: "取差"
-    string: "取\t@left\t减去\t@right\t的差"
+    name: "减去"
+    string: "求\t@left\t减去\t@right\t的差"
   Times:
-    name: "取积"
-    string: "取\t@left\t乘以\t@right\t的积"
+    name: "乘以"
+    string: "求\t@left\t乘以\t@right\t的积"
   Divide:
-    name: "取商"
-    string: "取\t@left\t除以\t@right\t的商"
+    name: "除以"
+    string: "求\t@left\t除以\t@right\t的商"
   Surplus:
-    name: "取余"
-    string: "取\t@left\t除以\t@right\t的余"
+    name: "求余"
+    string: "求\t@left\t除以\t@right\t的余"
   Logarithm:
     name: "取对数"
     string: "取以\t@left\t为底\t@right\t的对数"
   Power:
-    name: "取幂"
-    string: "取\t@left\t的\t@right\t次幂"
+    name: "幂运算"
+    string: "求\t@left\t的\t@right\t次幂"
   And:
     name: "与"
     string: "@left\t与\t@right"
@@ -39,7 +39,7 @@ cn:
     name: "等于"
     string: "@left\t等于\t@right"
   NotEqual:
-    name: "非等于"
+    name: "不等于"
     string: "@left\t非等于\t@right"
   GreaterThan:
     name: "大于"
