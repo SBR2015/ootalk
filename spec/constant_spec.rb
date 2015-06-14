@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'ootalk/constant'
 
 describe 'OoTalk::Constant' do
   it 'new' do
