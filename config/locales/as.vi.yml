@@ -1,0 +1,55 @@
+vi:
+  Plus:
+    name: "Cộng"
+    string: "@left\tcộng với\t@right"
+  Minus:
+    name: "Trừ"
+    string: "@left\ttrừ đi\t@right"
+  Times:
+    name: "Nhân"
+    string: "@left\tnhân với\t@right"
+  Divide:
+    name: "Chia"
+    string: "@left\tchia cho\t@right"
+  Surplus:
+    name: "Số dư"
+    string: "Số dư của\t@left\tkhi chia cho\t@right"
+  Logarithm:
+    name: "Logarit"
+    string: "Logarit\t@left\tcủa\t@right"
+  Power:
+    name: "Hàm mũ"
+    string: "@left\tmũ\t@right"
+  And:
+    name: "Nhân logic"
+    string: "@left\tand\t@right"
+  Nand:
+    name: "Phủ định nhân logic"
+    string: "@left\tnand\t@right"
+  Or:
+    name: "Cộng logic"
+    string: "@left\tor\t@right"
+  Nor:
+    name: "Phủ định cộng logic"
+    string: "@left\tnor\t@right"
+  Xor:
+    name: "Cộng loại trừ"
+    string: "@left\txor\t@right"
+  EqualTo:
+    name: "Bằng"
+    string: "@left\tbằng\t@right"
+  NotEqual:
+    name: "Khác"
+    string: "@left\tkhác\t@right"
+  GreaterThan:
+    name: "Lớn hơn"
+    string: "@left\tlớn hơn\t@right"
+  GreaterThanOrEqualTo:
+    name: "Lớn hơn hoặc bằng"
+    string: "@left\tlớn hơn hoặc bằng\t@right"
+  LessThan:
+    name: "Nhỏ hơn"
+    string: "@left\tnhỏ hơn\t@right"
+  LessThanOrEqualTo:
+    name: "Nhỏ hơn hoặc bằng"
+    string: "@left\tnhỏ hơn hoặc bằng\t@right"

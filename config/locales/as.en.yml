@@ -1,7 +1,55 @@
 en:
-  Plus:
-    name: "Add"
-    string: "add @right to @left"
-  Minus:
-    name: "Subtract"
-    string: "subtract @right from @left"
+  Add:
+    name: "Addition"
+    string: "@left\tplus\t@right"
+  Substract:
+    name: "Subtraction"
+    string: "@left\tminus\t@right"
+  Times:
+    name: "Multiplication"
+    string: "@left\ttimes\t@right"
+  Divide:
+    name: "Division"
+    string: "@left\tdivide by\t@right"
+  Surplus:
+    name: "Remainder"
+    string: "Remainder after division\t@left\tby\t@right"
+  Logarithm:
+    name: "Logarithm"
+    string: "Logarithm base\t@left\tof\t@right"
+  Power:
+    name: "Exponentiation"
+    string: "@left\tpower\t@right"
+  And:
+    name: "Logical AND"
+    string: "@left\tand\t@right"
+  Nand:
+    name: "NOT AND"
+    string: "@left\tnand\t@right"
+  Or:
+    name: "Logical OR"
+    string: "@left\tor\t@right"
+  Nor:
+    name: "NOT OR"
+    string: "@left\tnor\t@right"
+  Xor:
+    name: "Exclusive OR"
+    string: "@left\txor\t@right"
+  EqualTo:
+    name: "Equal to"
+    string: "@left\tequal to\t@right"
+  NotEqual:
+    name: "Not equal"
+    string: "@left\tnot equal to\t@right"
+  GreaterThan:
+    name: "Greater than"
+    string: "@left\tgreater than\t@right"
+  GreaterThanOrEqualTo:
+    name: "Greater than or equal to"
+    string: "@left\tgreater than or equal to\t@right"
+  LessThan:
+    name: "Less than"
+    string: "@left\tless than\t@right"
+  LessThanOrEqualTo:
+    name: "Less than or equal to"
+    string: "@left\t less than or equal to\t@right"

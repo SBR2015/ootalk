@@ -7,7 +7,7 @@ module OoTalk
     def self.create(locale = :en)
       # 言語設定
       I18n.load_path = Dir[File.expand_path('../../../config/locales', __FILE__) << '/*.yml']
-      I18n.available_locales = [:en, :ja, :cn]
+      I18n.available_locales = [:en, :ja, :cn, :vi]
       I18n.enforce_available_locales = true
       I18n.default_locale = :en
 

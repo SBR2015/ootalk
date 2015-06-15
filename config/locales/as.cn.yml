@@ -1,8 +1,8 @@
 cn:
-  Plus:
+  Add:
     name: "加上"
     string: "求\t@left\t加上\t@right\t的和"
-  Minus:
+  Subtract:
     name: "减去"
     string: "求\t@left\t减去\t@right\t的差"
   Times:
