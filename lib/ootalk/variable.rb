@@ -1,21 +1,22 @@
 module OoTalk
   class Variable
-    @@vars = {}
-
+    
+    attr_accessor :key 
+    @@name = {}
     private
 
-    def initialize(id)
-      @left = id
+    def initialize(key)
+      @key = key
     end
 
     public
 
     def exec
-      @@vars[@left]
+      @@name[@key]
     end
 
     def to_s
-      "#{@id}"
+      @key.to_s
     end
   end
 end
