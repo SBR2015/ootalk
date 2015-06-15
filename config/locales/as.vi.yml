@@ -1,8 +1,8 @@
 vi:
-  Plus:
+  Add:
     name: "Cộng"
     string: "@left\tcộng với\t@right"
-  Minus:
+  Subtract:
     name: "Trừ"
     string: "@left\ttrừ đi\t@right"
   Times:
