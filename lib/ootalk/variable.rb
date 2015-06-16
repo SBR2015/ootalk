@@ -14,6 +14,10 @@ module OoTalk
     def exec
       @@name[@key]
     end
+    
+    def self.name
+       return @@name 
+    end
 
     def to_s
       @key.to_s
