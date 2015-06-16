@@ -19,7 +19,7 @@ module OoTalk
       return @@name 
     end
 
-    def value=(val)
+    def self.name=(val)
       @@name[@key] = val
     end
 
