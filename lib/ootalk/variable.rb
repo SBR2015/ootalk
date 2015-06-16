@@ -1,7 +1,10 @@
+require 'active_support/all'
+
 module OoTalk
   class Variable
-    
-    attr_accessor :key, :val 
+
+    cattr_accessor :name
+    attr_accessor :key 
     @@name = {}
     private
 
@@ -13,14 +16,6 @@ module OoTalk
 
     def exec
       @@name[@key]
-    end
-    
-    def self.name
-      return @@name 
-    end
-
-    def self.name=(val)
-      @@name[@key] = val
     end
 
     def to_s
