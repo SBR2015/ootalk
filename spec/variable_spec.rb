@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'ootalk/variable'
+require 'active_support/all'
 
 describe 'OoTalk::Variable' do
   it "new" do
