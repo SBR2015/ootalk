@@ -16,11 +16,11 @@ module OoTalk
     end
     
     def self.name
-       return @@name 
+      return @@name 
     end
 
     def value=(val)
-        self.name[@key] = val      
+      @@name[@key] = val
     end
 
     def to_s
