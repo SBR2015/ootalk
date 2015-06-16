@@ -3,7 +3,8 @@ require 'ootalk/operator'
 module OoTalk
   class Loop
     def initialize(left, right)
-      super
+      @left = left
+      @right = right
       @operator = 'L'
     end
 
