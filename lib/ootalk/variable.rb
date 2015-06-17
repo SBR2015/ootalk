@@ -14,6 +14,16 @@ module OoTalk
 
     public
 
+    # getter
+    #def self.name
+    #  return @@name
+    #end
+
+    # setter
+    #def self.name=(name)
+    # @@name = name
+    #end
+
     def exec
       @@name[@key]
     end
