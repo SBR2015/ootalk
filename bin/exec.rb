@@ -53,6 +53,9 @@ logarithm4 = OoTalk::Logarithm.new(num10, num6)
 notequal1 = OoTalk::NotEqual.new(num1, num2)
 notequal2 = OoTalk::NotEqual.new(num2, num2)
 
+# 変数
+val1 = OoTalk::Variable.new("x")
+
 # 実行
 operator.push "#{add1} = #{add1.exec}"
 operator.push "#{add2} = #{add2.exec}"
@@ -68,6 +71,8 @@ operator.push "#{logarithm3} = #{logarithm3.exec}"
 operator.push "#{logarithm4} = #{logarithm4.exec}"
 operator.push "#{notequal1} = #{notequal1.exec}"
 operator.push "#{notequal2} = #{notequal2.exec}"
+
+operator.push "#{val1} = #{val1.exec}"
 
 operator.each do |o|
   puts o
