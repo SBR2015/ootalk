@@ -6,7 +6,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.1)
+    activesupport (4.2.2)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -39,7 +39,7 @@ GEM
     launchy (2.4.3)
       addressable (~> 2.3)
     method_source (0.8.2)
-    minitest (5.6.1)
+    minitest (5.7.0)
     multi_json (1.11.1)
     multipart-post (2.0.0)
     net-http-persistent (2.9.4)
@@ -101,3 +101,6 @@ DEPENDENCIES
   rake (~> 10.0)
   rspec
   travis
+
+BUNDLED WITH
+   1.10.4
