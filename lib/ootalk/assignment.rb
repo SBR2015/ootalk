@@ -18,7 +18,7 @@ module OoTalk
     end
 
     def to_s
-      @target.to_s
+      "#{@target.to_s}#{@op}#{@source.to_s}"
     end
   end
 end

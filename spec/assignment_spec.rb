@@ -20,8 +20,8 @@ describe 'OoTalk::Assignment' do
   end
   it 'to_s' do
     ass1 = OoTalk::Assignment.new(OoTalk::Variable.new('b'),OoTalk::Add.new(OoTalk::Constant.new(1),OoTalk::Constant.new(2)))
-    expect(ass1.to_s).to eq("b")
+    expect(ass1.to_s).to eq("b=(1+2)")
     ass2 = OoTalk::Assignment.new(OoTalk::Variable.new('b'),OoTalk::Times.new(OoTalk::Constant.new(1),OoTalk::Constant.new(2)))
-    expect(ass2.to_s).to eq("b")
+    expect(ass2.to_s).to eq("b=(1*2)")
   end
 end
