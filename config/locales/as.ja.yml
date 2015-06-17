@@ -1,10 +1,55 @@
 ja:
-  Plus:
+  Add:
     name: "足す"
     string: "@left\tと\t@right\tを足す"
-  Minus:
+  Subtract:
     name: "引く"
     string: "@left\tから\t@right\tを引く"
   Times:
     name: "掛ける"
     string: "@left\tと\t@right\tを掛ける"
+  Divide:
+    name: "割る"
+    string: "@left\tを\t@right\tに割る"
+  Surplus:
+    name: "余り"
+    string: "@left\t割る\t@right\tの余り"
+  Logarithm:
+    name: "対数"
+    string: "@left\tを底数とする\t@right\tの対数"
+  Power:
+    name: "累乗"
+    string: "@left\tの\t@right\t乗"
+  And:
+    name: "論理積"
+    string: "@left\tand\t@right"
+  Nand:
+    name: "否定論理積"
+    string: "@left\tnand\t@right"
+  Or:
+    name: "論理和"
+    string: "@left\tor\t@right"
+  Nor:
+    name: "否定論理和"
+    string: "@left\tnor\t@right"
+  Xor:
+    name: "排他的論理和"
+    string: "@left\txor\t@right"
+  EqualTo:
+    name: "同じ"
+    string: "@left\tは\t@right\tと等しい"
+  NotEqual:
+    name: "違う"
+    string: "@left\tは\t@right\tと等しくない"
+  GreaterThan:
+    name: "大なり"
+    string: "@left\tは\t@right\tより大きい"
+  GreaterThanOrEqualTo:
+    name: "以上"
+    string: "@left\tは\t@right\t以上"
+  LessThan:
+    name: "小なり"
+    string: "@left\tは\t@right\tより小さい"
+  LessThanOrEqualTo:
+    name: "以下"
+    string: "@left\tは\t@right以下"

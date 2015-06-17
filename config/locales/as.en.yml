@@ -52,4 +52,4 @@ en:
     string: "@left\tless than\t@right"
   LessThanOrEqualTo:
     name: "Less than or equal to"
-    string: "@left\t less than or equal to\t@right"
+    string: "@left\tless than or equal to\t@right"
