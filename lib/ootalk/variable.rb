@@ -4,7 +4,7 @@ module OoTalk
   class Variable
 
     cattr_accessor :name
-    attr_accessor :key
+
     @@name = {}
     private
 
