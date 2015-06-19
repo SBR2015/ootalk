@@ -13,6 +13,7 @@ describe "Ootalk::Conditional class" do
 
   cond1 = OoTalk::Conditional.new(equal_1, increment)
   cond2 = OoTalk::Conditional.new(not_equal_1, increment, decrement)
+  cond3 = OoTalk::Conditional.new(not_equal_1, increment)
 
   it "should be initialized properly" do
     expect(cond1).to_not be_nil
