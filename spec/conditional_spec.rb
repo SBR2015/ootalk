@@ -29,6 +29,11 @@ describe "Ootalk::Conditional class" do
     ass.exec
     cond2.exec
     expect(var.exec).to be 0
+    
+    # a = 1; if a != 1 then a += 1
+    ass.exec
+    cond3.exec
+    expect(var.exec).to be 1
   end
 
   it "should execute properly" do
