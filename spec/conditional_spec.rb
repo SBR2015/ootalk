@@ -30,13 +30,13 @@ describe "Ootalk::Conditional class" do
     expect(var.exec).to be 2
   end
 
-  it "should execute else_branch properly"
+  it "should execute else_branch properly" do
     # a = 1; if a != 1 then a += 1 else a -= 1
     cond2.exec
     expect(var.exec).to be 0
   end
   
-  if "should do nothing when there's no else_branch"  
+  if "should do nothing when there's no else_branch" do
     # a = 1; if a != 1 then a += 1
     cond3.exec
     expect(var.exec).to be 1
