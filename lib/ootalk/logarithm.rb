@@ -16,7 +16,7 @@ module OoTalk
       end
 
       def to_s
-        "#{@operator.to_s}#{@left.to_s}(#{@right.to_s})"
+        "#{@operator}#{@left.to_s}(#{@right.to_s})"
       end
   end
 end
