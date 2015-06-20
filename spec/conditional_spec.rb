@@ -36,7 +36,7 @@ describe "Ootalk::Conditional class" do
     expect(var.exec).to be 0
   end
   
-  if "should do nothing when there's no else_branch" do
+  if "should do nothing when there is no else_branch" do
     # a = 1; if a != 1 then a += 1
     cond3.exec
     expect(var.exec).to be 1
