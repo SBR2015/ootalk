@@ -92,5 +92,5 @@ RSpec.configure do |config|
   #   Kernel.srand config.seed
 
   config.color = true
-  CodeClimate::TestReporter.start
+  CodeClimate::TestReporter.start unless ENV['CODECLIMATE_REPO_TOKEN'] == nil
 end
