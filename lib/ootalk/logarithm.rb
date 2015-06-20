@@ -16,7 +16,7 @@ module OoTalk
       end
 
       def to_s
-        "ばーか"
+        return "#{@operator}#{@left}(#{@right})"
       end
   end
 end
