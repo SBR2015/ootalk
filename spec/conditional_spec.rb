@@ -15,24 +15,29 @@ describe "Ootalk::Conditional class" do
   cond2 = OoTalk::Conditional.new(not_equal_1, increment, decrement)
   cond3 = OoTalk::Conditional.new(not_equal_1, increment)
 
+  before :each do
+    ass.exec
+  end
+
   it "should be initialized properly" do
     expect(cond1).to_not be_nil
     expect(cond2).to_not be_nil
   end
 
-  it "should execute properly" do
+  it "should execute then_branch properly" do
     # a = 1; if a == 1 then a += 1
-    ass.exec
     cond1.exec
     expect(var.exec).to be 2
+  end
 
+  it "should execute else_branch properly"
     # a = 1; if a != 1 then a += 1 else a -= 1
-    ass.exec
     cond2.exec
     expect(var.exec).to be 0
-    
+  end
+  
+  if "should do nothing when there's no else_branch"  
     # a = 1; if a != 1 then a += 1
-    ass.exec
     cond3.exec
     expect(var.exec).to be 1
   end
