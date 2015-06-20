@@ -53,3 +53,30 @@ ja:
   LessThanOrEqualTo:
     name: "以下"
     string: "@left\tは\t@right以下"
+  Program:
+    name: "プログラム"
+    string: "プログラム"
+  Instruction:
+    name: "インストラクション"
+    string: "インストラクション"
+  Skip:
+    name: "スキップ"
+    string: "スキップ"
+  Assignment:
+    name: "代入"
+    string: "@rightを@leftに代入する"
+  Compound:
+    name: "複合文"
+    string: "複合文"
+  Loop:
+    name: "くりかえし"
+    string: ""
+  Conditional:
+    name: "条件文"
+    string: "もし\t@condtionならば\t@thenbranch\tそうでなければ\t@elsebranch"
+  Variable:
+    name: "変数"
+    string: "変数\t@key"
+  Constant:
+    name: "コンスタント"
+    string: "@value"
