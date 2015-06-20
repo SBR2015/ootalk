@@ -71,6 +71,3 @@ cn:
   Loop:
     name: "反复"
     string:
-  Compound:
-    name: "复合文"
-    string:
