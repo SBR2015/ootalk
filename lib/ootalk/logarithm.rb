@@ -18,7 +18,6 @@ module OoTalk
       def to_s
         # どっちで書くかは要検討
         "#{@operator}#{@left}(#{@right})"
-        # @operator.to_s + @left.to_s + "(" + @right.to_s + ")"
       end
   end
 end
