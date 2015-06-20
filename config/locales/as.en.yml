@@ -53,3 +53,30 @@ en:
   LessThanOrEqualTo:
     name: "Less than or equal to"
     string: "@left\tless than or equal to\t@right"
+  Program:
+    name: "Program"
+    string: "Program"
+  Instruction:
+    name: "Instruction"
+    string: "Instruction"
+  Skip:
+    name: "Skip"
+    string: "Skip"
+  Assignment:
+    name: "Assignment"
+    string: "Assign\t@left\tto\t@right"
+  Compound:
+    name: "Compound"
+    string: "Compound"
+  Loop:
+    name: "Loop"
+    string: ""
+  Conditional:
+    name: "Conditional"
+    string: "If\t@condtion\tthen\t@thenbranch\telse\t@elsebranch"
+  Variable:
+    name: "Variable"
+    string: "Variable\t@key"
+  Constant:
+    name: "Constant"
+    string: "@value"
