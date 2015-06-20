@@ -21,11 +21,8 @@ module OoTalk
       end
 
       def exec
-        if @condition.exec
-          @thenbranch.exec
-        elsif @elsebranch != nil
-          @elsebranch.exec
-        end
+        return @thenbranch.exec if @condition.exec 
+        return @elsebranch.exec unless @elsebranch.nil?
       end
   end
 end
