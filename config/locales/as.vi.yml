@@ -53,3 +53,30 @@ vi:
   LessThanOrEqualTo:
     name: "Nhỏ hơn hoặc bằng"
     string: "@left\tnhỏ hơn hoặc bằng\t@right"
+  Program:
+    name: "Chương trình"
+    string: "Chương trình"
+  Instruction:
+    name: "Câu lệnh"
+    string: "Câu lệnh"
+  Skip:
+    name: "Nhảy"
+    string: "Nhảy"
+  Assignment:
+    name: "Gán"
+    string: "Gán giá trị\t@left\tcho\t@right"
+  Compound:
+    name: "Khối lệnh"
+    string: "Khối lệnh"
+  Loop:
+    name: "Vòng lặp"
+    string: ""
+  Conditional:
+    name: "Câu điều kiện"
+    string: "Nếu\t@condtion\tthì\t@thenbranch\tkhông thì\t@elsebranch"
+  Variable:
+    name: "Biến"
+    string: "Biến\t@key"
+  Constant:
+    name: "Hằng số"
+    string: "@value"
