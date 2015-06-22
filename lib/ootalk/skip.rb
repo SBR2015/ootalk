@@ -12,6 +12,7 @@ module OoTalk
     public
 
     def exec
+      return nil
     end
 
     def to_s
