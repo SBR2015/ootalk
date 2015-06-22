@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ootalk (0.2.0)
+    ootalk (0.3.0)
 
 GEM
   remote: https://rubygems.org/
@@ -61,7 +61,7 @@ GEM
     rspec-expectations (3.3.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.3.0)
-    rspec-mocks (3.3.0)
+    rspec-mocks (3.3.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.3.0)
     rspec-support (3.3.0)
@@ -101,3 +101,6 @@ DEPENDENCIES
   rake (~> 10.0)
   rspec
   travis
+
+BUNDLED WITH
+   1.10.4
