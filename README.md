@@ -12,12 +12,12 @@ Usage
 
 Asume you are using rbenv:
 
-```
-rbenv install
-gem install bundle
-rbenv rehash
-bundle install
-bundle exec ruby bin/exec.rb
+```bash
+$ rbenv install
+$ gem install bundle
+$ rbenv rehash
+$ bundle install
+$ bundle exec ruby bin/exec.rb
 ```
 
 先生
