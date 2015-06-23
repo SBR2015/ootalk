@@ -69,5 +69,5 @@ cn:
     name: "注释"
     string: "注释\t@comment"
   Loop:
-    name: "反复"
+    name: "循环"
     string:
