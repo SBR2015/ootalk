@@ -69,7 +69,7 @@ cn:
     name: "跳过"
     string:
   Loop:
-    name: "反复"
+    name: "循环"
     string:
   Compound:
     name: "复合文"
