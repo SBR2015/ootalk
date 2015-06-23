@@ -8,18 +8,33 @@ describe 'NotOr' do
   end
 
   it 'to_s' do
-    no = OoTalk::Nor.new(OoTalk::Constant.new(true), OoTalk::Constant.new(false))
+    no = OoTalk::Nor.new(
+      OoTalk::Constant.new(true),
+      OoTalk::Constant.new(false)
+    )
     expect(no.to_s.length).to be >= 0
   end
 
   it 'exec' do
-    no = OoTalk::Nor.new(OoTalk::Constant.new(true), OoTalk::Constant.new(true))
+    no = OoTalk::Nor.new(
+      OoTalk::Constant.new(true),
+      OoTalk::Constant.new(true)
+    )
     expect(no.exec).to be_falsey
-    no = OoTalk::Nor.new(OoTalk::Constant.new(true), OoTalk::Constant.new(false))
+    no = OoTalk::Nor.new(
+      OoTalk::Constant.new(true),
+      OoTalk::Constant.new(false)
+    )
     expect(no.exec).to be_falsey
-    no = OoTalk::Nor.new(OoTalk::Constant.new(false), OoTalk::Constant.new(true))
+    no = OoTalk::Nor.new(
+      OoTalk::Constant.new(false),
+      OoTalk::Constant.new(true)
+    )
     expect(no.exec).to be_falsey
-    no = OoTalk::Nor.new(OoTalk::Constant.new(false), OoTalk::Constant.new(false))
+    no = OoTalk::Nor.new(
+      OoTalk::Constant.new(false),
+      OoTalk::Constant.new(false)
+    )
     expect(no.exec).to be_truthy
   end
 end
