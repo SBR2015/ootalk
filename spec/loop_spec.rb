@@ -2,9 +2,10 @@ require 'spec_helper'
 require 'ootalk/loop'
 require 'ootalk/constant'
 require 'ootalk/less_than'
+require 'ootalk/add'
+require 'ootalk/substract'
 require 'ootalk/variable'
 require 'ootalk/assignment'
-require 'ootalk/times'
 
 describe 'Loop' do
   it 'new' do
@@ -16,25 +17,29 @@ describe 'Loop' do
     #while (x < 3) do
     #    y += 10
     #end
-    cons0 = OoTalk::Constant.new(0)
-    cons1 = OoTalk::Constant.new(1)
+    #y => 30
     cons3 = OoTalk::Constant.new(3)
     cons10 = OoTalk::Constant.new(10)
+
+    # x = 0
     val_x = OoTalk::Variable.new('x')
-    val_y = OoTalk::Variable.new('y')
+    cons0 = OoTalk::Constant.new(0)
     OoTalk::Assignment.new(val_x, cons0).exec
-
+    # x + 1
+    cons1 = OoTalk::Constant.new(1)
     add = OoTalk::Add.new(val_x, cons1)
+    # x = x + 1
     assign = OoTalk::Assignment.new(val_x, add)
+    # x < 3
     less_than = OoTalk::LessThan.new(val_x, cons3)
-
+    # y = 0
+    val_y = OoTalk::Variable.new('y')
+    OoTalk::Assignment.new(val_y, cons0).exec
+    # y = y + 10
     add = OoTalk::Add.new(val_y, cons10)
-    assign2 = OoTalk::Assignment.new(val_y, add)
-    #lp = OoTalk::Loop.new(less_than, assign2, assgin)
-    puts '#########################'
-    puts val_y.exec
-    puts '#########################'
-    #expect(lp.exec).to be 6
-    expect(6).to be 6
+    results = OoTalk::Assignment.new(val_y, add)
+    lp = OoTalk::Loop.new(less_than, results, assign)
+    lp.exec
+    expect(val_y.exec).to be 30
   end
 end
