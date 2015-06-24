@@ -1,12 +1,16 @@
 require 'spec_helper'
 require 'ootalk/loop'
 require 'ootalk/constant'
+require 'ootalk/variable'
+require 'ootalk/assignment'
 require 'ootalk/times'
 
 describe 'Loop' do
   it 'new' do
     cons1 = OoTalk::Constant.new(2)
     cons2 = OoTalk::Constant.new(3)
+    assign = OoTalk::Assignment.new()
+    val = OoTalk::Variable.new('x')
     lp = OoTalk::Loop.new(cons1, cons2)
     expect(lp).to_not be_nil
   end
