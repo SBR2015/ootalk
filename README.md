@@ -7,6 +7,19 @@ OoTalk
 
 OoTalkのエンジンです
 
+Usage
+-----
+
+Asume you are using rbenv:
+
+```bash
+$ rbenv install
+$ gem install bundle
+$ rbenv rehash
+$ bundle install
+$ bundle exec ruby bin/exec.rb
+```
+
 先生
 ---------------
 - [Yoshihide Chubachi](https://github.com/ychubachi):中鉢 欣秀

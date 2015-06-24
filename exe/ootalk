@@ -1,0 +1,42 @@
+#! /usr/bin/env ruby
+
+require 'ootalk'
+
+def init_json(input)
+  begin
+    str = ''
+    f = File.open(input, 'r')
+    f.each_line do |line|
+      str += line
+    end
+    f.close
+    jsonstr = str
+  rescue
+    if input.nil?
+      jsonstr = ''
+    else
+      if input.length > 0
+        jsonstr = input
+      else
+        jsonstr = STDIN.gets
+      end
+    end
+  end
+
+  jsonstr
+end
+
+# prepare
+if !STDIN.tty? && !STDIN.closed?
+  input_data = STDIN.read
+else
+  input_data = ARGV[0] if ARGV.length > 0
+end
+
+jsonstr = init_json(input_data)
+if jsonstr.length == 0
+  puts 'error: no input was found.'
+else
+  prog = OoTalk::Program.new(jsonstr)
+  puts prog.exec
+end

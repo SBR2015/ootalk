@@ -1,8 +1,8 @@
 cn:
-  Plus:
+  Add:
     name: "加上"
     string: "求\t@left\t加上\t@right\t的和"
-  Minus:
+  Subtract:
     name: "减去"
     string: "求\t@left\t减去\t@right\t的差"
   Times:
@@ -53,3 +53,21 @@ cn:
   LessThanOrEqualTo:
     name: "小于等于"
     string: "@left\t小于等于\t@right"
+  Variable:
+    name: "变数"
+    string: "变数@key"
+  Constant:
+    name: "定数"
+    string: "@value"
+  Assignment:
+    name: "代入"
+    string: "把\t@source\t代入\t@target"
+  Conditional:
+    name: "条件"
+    string: "如果\t@condition\t那么\t@thenbranch\t否则\t@elsebranch"
+  Skip:
+    name: "注释"
+    string: "注释\t@comment"
+  Loop:
+    name: "循环"
+    string:

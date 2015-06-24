@@ -34,4 +34,5 @@ describe 'OoTalk::Variable' do
     expect(vars3.exec).to be_nil
     expect(vars4.exec).to be vars1.exec 
   end
+
 end

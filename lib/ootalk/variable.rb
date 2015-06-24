@@ -1,7 +1,10 @@
+require 'active_support/all'
+
 module OoTalk
   class Variable
-    
-    attr_accessor :key 
+
+    cattr_accessor :name
+
     @@name = {}
     private
 
@@ -18,5 +21,17 @@ module OoTalk
     def to_s
       @key.to_s
     end
+
+    # cattr_accessorを使うといらない
+    # # getter
+    # def self.name
+    #   return @@name
+    # end
+    #
+    # # setter
+    # def self.name=(name)
+    #   @@name = name
+    # end
+
   end
 end
