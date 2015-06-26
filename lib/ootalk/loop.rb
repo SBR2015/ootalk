@@ -2,11 +2,10 @@ require 'ootalk/operator'
 
 module OoTalk
   class Loop
-    def initialize(left, middle, right)
+    def initialize(left=nil, middle=nil, right=nil)
       @left = left
       @middle = middle
       @right = right
-      @operator = 'L'
     end
 
     # @left.exec: 条件式(loop条件)
@@ -14,9 +13,12 @@ module OoTalk
     # @right.exec: 条件式(loop条件の制御)
     def exec
       while @left.exec do
-        @right.exec
         @middle.exec
+        @right.exec
       end
+    end
+    def to_s
+      "while #{@left} do \n  #{@middle}\n  #{@right}\nend"
     end
   end
 end
