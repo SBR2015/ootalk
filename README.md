@@ -22,13 +22,13 @@ $ bundle exec ruby bin/exec.rb
 
 先生
 ---------------
-- [Yoshihide Chubachi](https://github.com/ychubachi):中鉢 欣秀
+- [Yoshihide Chubachi](https://github.com/ychubachi):中鉢 欣秀(プロダクトオーナー)
 
 Team members
 ---------------
-- [shinjukujohnny](https://github.com/shinjukujohnny):吉川久文(プロダクトオーナー)
+- [shinjukujohnny](https://github.com/shinjukujohnny):吉川久文(Scrum master)
 
-- [Yusuke Ohashi](https://github.com/yuchan):大橋佑亮(Scrum master)
+- [Yusuke Ohashi](https://github.com/yuchan):大橋佑亮
 
 - [pyar6329](https://github.com/pyar6329):有馬司
 
