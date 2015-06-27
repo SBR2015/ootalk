@@ -19,6 +19,7 @@ describe 'Loop' do
  i = 0
  while (i < 3) do
    a += 10
+   i += 1
  end
  a => 30
 =end
@@ -53,6 +54,7 @@ describe 'Loop' do
  i = 0
  while (i < 3) do
    a += 10
+   i += 1
  end
  a => 30
 =end
