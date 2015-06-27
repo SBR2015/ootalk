@@ -32,9 +32,9 @@ describe 'Loop' do
     OoTalk::Assignment.new(val_i, cons0).exec
     # i + 1
     cons1 = OoTalk::Constant.new(1)
-    add = OoTalk::Add.new(val_i, cons1)
+    incr = OoTalk::Add.new(val_i, cons1)
     # i = i + 1
-    assign = OoTalk::Assignment.new(val_i, add)
+    assign = OoTalk::Assignment.new(val_i, incr)
     # i < 3
     less_than = OoTalk::LessThan.new(val_i, cons3)
     # a = 0
@@ -66,9 +66,9 @@ describe 'Loop' do
     OoTalk::Assignment.new(val_i, cons0).exec
     # i + 1
     cons1 = OoTalk::Constant.new(1)
-    add = OoTalk::Add.new(val_i, cons1)
+    incr = OoTalk::Add.new(val_i, cons1)
     # i = i + 1
-    assign = OoTalk::Assignment.new(val_i, add)
+    assign = OoTalk::Assignment.new(val_i, incr)
     # i < 3
     less_than = OoTalk::LessThan.new(val_i, cons3)
     # a = 0
@@ -78,6 +78,6 @@ describe 'Loop' do
     add = OoTalk::Add.new(val_a, cons10)
     results = OoTalk::Assignment.new(val_a, add)
     lp = OoTalk::Loop.new(less_than, results, assign)
-    expect(lp.to_s).to eq "while (i<3) do \n  a=(a+10)\n  i=(i+1)\nend"
+    expect(lp.to_s).to eq "while true do\n  break unless (i<3)\n  a=(a+10)\n  i=(i+1)\nend"
   end
 end

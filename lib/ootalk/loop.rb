@@ -12,13 +12,14 @@ module OoTalk
     # @middle.exec: Instruction#exec
     # @right.exec: 条件式(loop条件の制御)
     def exec
-      while @left.exec do
+      while true do
+        break unless @left.exec
         @middle.exec
         @right.exec
       end
     end
     def to_s
-      "while #{@left} do \n  #{@middle}\n  #{@right}\nend"
+      "while true do\n  break unless #{@left}\n  #{@middle}\n  #{@right}\nend"
     end
   end
 end
