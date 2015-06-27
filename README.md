@@ -30,7 +30,7 @@ Team members
 
 - [Yusuke Ohashi](https://github.com/yuchan):大橋佑亮
 
-- [pyar6329](https://github.com/pyar6329):有馬司
+- [pyar6329](https://github.com/pyar6329):有馬司(アーキテクト)
 
 - [a1447ll](https://github.com/a1447ll):LE BAO LINH
 
