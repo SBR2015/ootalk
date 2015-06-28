@@ -22,4 +22,14 @@ describe 'program' do
     prog3 = OoTalk::Program.new('[{"Program":{"Constant":{"Left": 15}}}]')
     expect(prog3.exec["eval_0"]["result"]).to eq 15
   end
+
+  it 'input_raw_data' do
+    prog = OoTalk::Program.new('[{"Program":{"GreaterThan":{"Left":{"Constant":{"Left": 2}}, "Right":{"Constant":{"Left":3}}}}}]')
+    expect(prog.input_raw_data).to eq '[{"Program":{"GreaterThan":{"Left":{"Constant":{"Left": 2}}, "Right":{"Constant":{"Left":3}}}}}]'
+  end
+
+  it 'to_s' do
+    prog = OoTalk::Program.new('[{"Program":{"GreaterThan":{"Left":{"Constant":{"Left": 2}}, "Right":{"Constant":{"Left":3}}}}}]')
+    expect(prog.to_s.length).to be > 0
+  end
 end

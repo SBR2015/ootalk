@@ -1,0 +1,18 @@
+[
+    {
+        "Program":{
+            "Assignment":{
+                "Left":{
+                    "Variable":{
+                        "Left":"a"
+                    }
+                },
+                "Right":{
+                    "Constant":{
+                        "Left":2
+                    }
+                }
+            }
+        }
+    }
+]

@@ -27,7 +27,7 @@ module OoTalk
       obj_array.each do |code|
         dict = code['Program']
         if dict.instance_of?(Hash)
-          eval_obj = evaluate(dict)
+          evaluate(dict)
         elsif dict.instance_of?(Array)
           parse(dict)
         end
@@ -35,63 +35,71 @@ module OoTalk
     end
 
     def evaluate(dict)
+      return dict unless dict.instance_of?(Hash)
+
       key = dict.keys[0]
       value = dict[key]
 
-      left = value['Left'].instance_of?(Hash) ? evaluate(value['Left']) : value['Left']
-      right = value['Right'].instance_of?(Hash) ? evaluate(value['Right']) : value['Right']
-      middle = value['Middle'].instance_of?(Hash) ? evaluate(value['Middle']) : value['Middle']
+      left = evaluate(value['Left'])
+      right = evaluate(value['Right'])
+      middle = evaluate(value['Middle'])
+      evalobj = create_evalobject(key, left, right, middle)
+      setresult(evalobj)
+      evalobj
+    end
 
+    def setresult(evalobj)
+      result = {}
+      result['exec'] = evalobj.to_s
+      result['result'] = evalobj.respond_to?(:exec) ? evalobj.exec : evalobj
+      @result_dict['eval_' + @result_dict.keys.length.to_s] = result
+    end
+
+    def create_evalobject(key, left, right, _middle)
       case key
       when 'Constant'
-        eval_obj = OoTalk::Constant.new(left)
+        OoTalk::Constant.new(left)
       when 'Variable'
-        eval_obj = OoTalk::Variable.new(left)
+        OoTalk::Variable.new(left)
+      when 'Assignment'
+        OoTalk::Assignment.new(left, right)
       when 'Add'
-        eval_obj = OoTalk::Add.new(left, right)
+        OoTalk::Add.new(left, right)
       when 'Subtract'
-        eval_obj = OoTalk::Subtract.new(left, right)
+        OoTalk::Subtract.new(left, right)
       when 'Times'
-        eval_obj = OoTalk::Times.new(left, right)
+        OoTalk::Times.new(left, right)
       when 'Divide'
-        eval_obj = OoTalk::Divide.new(left, right)
+        OoTalk::Divide.new(left, right)
       when 'Power'
-        eval_obj = OoTalk::Power.new(left, right)
+        OoTalk::Power.new(left, right)
       when 'Logarithm'
-        eval_obj = OoTalk::Logarithm.new(left, right)
+        OoTalk::Logarithm.new(left, right)
       when 'Surplus'
-        eval_obj = OoTalk::Surplus.new(left, right)
+        OoTalk::Surplus.new(left, right)
       when 'GreaterThan'
-        eval_obj = OoTalk::GreaterThan.new(left, right)
+        OoTalk::GreaterThan.new(left, right)
       when 'GreaterThanOrEqualTo'
-        eval_obj = OoTalk::GreaterThanOrEqualTo.new(left, right)
+        OoTalk::GreaterThanOrEqualTo.new(left, right)
       when 'EqualTo'
-        eval_obj = OoTalk::EqualTo.new(left, right)
+        OoTalk::EqualTo.new(left, right)
       when 'NotEqual'
-        eval_obj = OoTalk::NotEqual.new(left, right)
+        OoTalk::NotEqual.new(left, right)
       when 'LessThan'
-        eval_obj = OoTalk::LessThan.new(left, right)
+        OoTalk::LessThan.new(left, right)
       when 'LessThanOrEqualTo'
-        eval_obj = OoTalk::LessThanOrEqualTo.new(left, right)
+        OoTalk::LessThanOrEqualTo.new(left, right)
       when 'And'
-        eval_obj = OoTalk::And.new(left, right)
+        OoTalk::And.new(left, right)
       when 'Nand'
-        eval_obj = OoTalk::Nand.new(left, right)
+        OoTalk::Nand.new(left, right)
       when 'Or'
-        eval_obj = OoTalk::Or.new(left, right)
+        OoTalk::Or.new(left, right)
       when 'Nor'
-        eval_obj = OoTalk::Nor.new(left, right)
+        OoTalk::Nor.new(left, right)
       when 'Xor'
-        eval_obj = OoTalk::Xor.new(left, right)
-      else
-        return
+        OoTalk::Xor.new(left, right)
       end
-
-      result = {}
-      result['eval'] = eval_obj.to_s
-      result['result'] = eval_obj.respond_to?(:exec) ? eval_obj.exec: eval_obj
-      @result_dict['eval_' + @result_dict.keys.length.to_s] = result
-      eval_obj
     end
   end
 end
