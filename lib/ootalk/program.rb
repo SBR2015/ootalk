@@ -28,18 +28,14 @@ module OoTalk
         dict = code['Program']
         if dict.instance_of?(Hash)
           evaluate(dict)
-        elsif dict.instance_of?(Array)
-          parse(dict)
         end
       end
     end
 
     def evaluate(dict)
       return dict unless dict.instance_of?(Hash)
-
       key = dict.keys[0]
       value = dict[key]
-
       left = evaluate(value['Left'])
       right = evaluate(value['Right'])
       middle = evaluate(value['Middle'])
@@ -65,8 +61,8 @@ module OoTalk
         OoTalk::Assignment.new(left, right)
       when 'Add'
         OoTalk::Add.new(left, right)
-      when 'Subtract'
-        OoTalk::Subtract.new(left, right)
+      when 'Substract'
+        OoTalk::Substract.new(left, right)
       when 'Times'
         OoTalk::Times.new(left, right)
       when 'Divide'
