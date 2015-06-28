@@ -1,0 +1,18 @@
+[
+    {
+        "Program":{
+            "GreaterThan":{
+                "Left":{
+                    "Constant":{
+                        "Left":2
+                    }
+                },
+                "Right":{
+                    "Constant":{
+                        "Left":3
+                    }
+                }
+            }
+        }
+    }
+]
