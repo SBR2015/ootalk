@@ -8,7 +8,6 @@ class Translator
     @language_map.each do |key, value|
       input.text.gsub!(/#{key}/, " #{value} ")
     end
-    puts input.text
     eval input.text
   end
 
