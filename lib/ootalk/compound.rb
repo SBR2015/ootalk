@@ -20,7 +20,7 @@ module OoTalk
 
        #　block{}内の式列の表示
       def to_s
-       "(#{@left}#{@op}#{@right})"
+       "{#{@left}#{@op} #{@right}}"
       end
    end
 end 
