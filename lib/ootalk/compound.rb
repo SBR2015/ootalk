@@ -15,7 +15,7 @@ module OoTalk
       #　exec: block{}の中で、式列一個づつ実行してから、最後の結果（right.exec）を返す
       def exec
         @left.exec
-        return @right.exec
+        @right.exec
       end
 
        #　block{}内の式列の表示
