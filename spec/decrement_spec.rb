@@ -3,18 +3,17 @@ require 'ootalk/decrement'
 
 
 describe 'Decrement class' do
-    var_dec = OoTalk::Variable.new('dec')
-    cons_10 = OoTalk::Constant.new(10)
-    ass_dec_10 = OoTalk::Assignment.new(var_dec, cons_10)
-    ass_dec_10.exec
-    cons_1 = OoTalk::Constant.new(1)
-    dec_1 = OoTalk::Decrement.new(var_dec, cons_1)
+  # dec = 10
+  OoTalk::Assignment.new(OoTalk::Variable.new('dec'), OoTalk::Constant.new(10)).exec
+  # Decrementテストの変数の用意
+  let(:dec_1) {OoTalk::Decrement.new(OoTalk::Variable.new('dec'), OoTalk::Constant.new(1))}
 
   it "new" do
     expect(dec_1).to_not be_nil
   end
 
   it "exec" do
+    # dec = dec - 1
     expect(dec_1.exec).to eq(9)
     expect(dec_1.exec).to eq(8)
     expect(dec_1.exec).to eq(7)
