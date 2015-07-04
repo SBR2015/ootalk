@@ -20,6 +20,6 @@ describe 'Decrement class' do
   end
 
   it "to_s" do
-    expect(dec_1.to_s.length).to be >= 0
+    expect(dec_1.to_s).to eq("dec--")
   end
 end

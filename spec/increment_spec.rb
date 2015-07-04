@@ -20,6 +20,6 @@ describe 'Increment class' do
   end
 
   it "to_s" do
-    expect(inc_1.to_s.length).to be >= 0
+    expect(inc_1.to_s).to eq("inc++")
   end
 end
