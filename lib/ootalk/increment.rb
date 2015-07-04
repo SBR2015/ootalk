@@ -4,7 +4,7 @@ require 'ootalk/variable'
 module OoTalk
   class Increment < Operator
 
-    def initialize(left, right)
+    def initialize(left)
     super
     end
 

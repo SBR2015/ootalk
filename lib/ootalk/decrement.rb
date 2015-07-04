@@ -4,7 +4,7 @@ require 'ootalk/variable'
 module OoTalk
   class Decrement < Operator
 
-    def initialize(left, right)
+    def initialize(left)
     super
     end
 
