@@ -8,11 +8,20 @@
                     }
                 },
                 "Right":{
-                    "Constant":{
-                        "Left":2
+                  "Add":{
+                      "Left":{
+                          "Constant":{
+                              "Left":2
+                          }
+                      },
+                      "Right":{
+                          "Constant":{
+                              "Left":3
+                          }
+                      }
+                  }
                     }
                 }
             }
         }
-    }
 ]
