@@ -5,7 +5,7 @@ module OoTalk
     def initialize(data)
       @body = data
       @json_dict = JSON.parse(data)
-      @result_dict = {}
+      @result_dict = []
       parse(@json_dict)
     end
 
@@ -48,7 +48,7 @@ module OoTalk
       result = {}
       result['exec'] = evalobj.to_s
       result['result'] = evalobj.respond_to?(:exec) ? evalobj.exec : evalobj
-      @result_dict['eval_' + @result_dict.keys.length.to_s] = result
+      @result_dict.push(result);
     end
 
     def create_evalobject(key, left, right, _middle)

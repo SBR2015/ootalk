@@ -1,0 +1,22 @@
+[
+  {
+    "Program":
+    {
+      "Assignment":
+      {
+        "Left":{"Variable":{"Left": "a"}},
+        "Right":{"Constant":{"Left":2}}
+      }
+    }
+  },
+  {
+    "Program":
+    {
+      "Add":
+      {
+        "Left":{"Variable":{"Left": "a"}},
+        "Right":{"Constant":{"Left":3}}
+      }
+    }
+  }
+]
