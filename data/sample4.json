@@ -12,7 +12,7 @@
   {
     "Program":
     {
-      "Add":
+      "Subtract":
       {
         "Left":{"Variable":{"Left": "a"}},
         "Right":{"Constant":{"Left":3}}

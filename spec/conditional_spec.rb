@@ -9,7 +9,7 @@ describe "Ootalk::Conditional class" do
   not_equal_1 = OoTalk::NotEqual.new(var, OoTalk::Constant.new(1))
 
   increment = OoTalk::Assignment.new(var, OoTalk::Add.new(var, OoTalk::Constant.new(1)))
-  decrement = OoTalk::Assignment.new(var, OoTalk::Substract.new(var, OoTalk::Constant.new(1)))
+  decrement = OoTalk::Assignment.new(var, OoTalk::Subtract.new(var, OoTalk::Constant.new(1)))
 
   cond1 = OoTalk::Conditional.new(equal_1, increment)
   cond2 = OoTalk::Conditional.new(not_equal_1, increment, decrement)

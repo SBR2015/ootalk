@@ -2,7 +2,7 @@ en:
   Add:
     name: "Addition"
     string: "@left\tplus\t@right"
-  Substract:
+  Subtract:
     name: "Subtraction"
     string: "@left\tminus\t@right"
   Times:

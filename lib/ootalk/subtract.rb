@@ -1,7 +1,7 @@
 require 'ootalk/operator'
 
 module OoTalk
-  class Substract < Operator
+  class Subtract < Operator
     def initialize(left, right)
       super
       @operator = '-'

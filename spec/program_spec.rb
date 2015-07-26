@@ -26,7 +26,7 @@ describe 'program' do
     prog = OoTalk::Program.new('[{"Program":{"Constant":{"Left": 15}}}]')
     expect(prog.exec[0]["result"]).to eq 15
 
-    prog = OoTalk::Program.new('[{"Program":{"Substract":{"Left":{"Constant":{"Left": 5}}, "Right":{"Constant":{"Left":3}}}}}]')
+    prog = OoTalk::Program.new('[{"Program":{"Subtract":{"Left":{"Constant":{"Left": 5}}, "Right":{"Constant":{"Left":3}}}}}]')
 
     expect(prog.exec[0]["result"]).to eq 5
     expect(prog.exec[1]["result"]).to eq 3
