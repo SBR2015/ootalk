@@ -73,10 +73,10 @@ vi:
     string: ""
   Conditional:
     name: "Câu điều kiện"
-    string: "Nếu\t@condtion\tthì\t@thenbranch\tkhông thì\t@elsebranch"
+    string: "Nếu\t@left\tthì\t@middle\tkhông thì\t@right"
   Variable:
     name: "Biến"
-    string: "Biến\t@key"
+    string: "Biến\t@left"
   Constant:
     name: "Hằng số"
-    string: "@value"
+    string: "@left"

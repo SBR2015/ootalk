@@ -73,10 +73,10 @@ ja:
     string: ""
   Conditional:
     name: "条件文"
-    string: "もし\t@condtionならば\t@thenbranch\tそうでなければ\t@elsebranch"
+    string: "もし\t@leftならば\t@middle\tそうでなければ\t@right"
   Variable:
     name: "変数"
-    string: "変数\t@key"
+    string: "変数\t@left"
   Constant:
     name: "コンスタント"
-    string: "@value"
+    string: "@left"

@@ -64,7 +64,7 @@ en:
     string: "Skip"
   Assignment:
     name: "Assignment"
-    string: "Assign\t@left\tto\t@right"
+    string: "Assign\t@right\tto\t@left"
   Compound:
     name: "Compound"
     string: "Compound"
@@ -73,10 +73,10 @@ en:
     string: ""
   Conditional:
     name: "Conditional"
-    string: "If\t@condtion\tthen\t@thenbranch\telse\t@elsebranch"
+    string: "If\t@left\tthen\t@middle\telse\t@right"
   Variable:
     name: "Variable"
-    string: "Variable\t@key"
+    string: "Variable\t@left"
   Constant:
     name: "Constant"
-    string: "@value"
+    string: "@left"

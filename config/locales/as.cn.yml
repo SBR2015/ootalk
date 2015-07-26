@@ -55,19 +55,19 @@ cn:
     string: "@left\t小于等于\t@right"
   Variable:
     name: "变数"
-    string: "变数@key"
+    string: "变数@left"
   Constant:
     name: "定数"
-    string: "@value"
+    string: "@left"
   Assignment:
     name: "代入"
-    string: "把\t@source\t代入\t@target"
+    string: "把\t@rignt\t代入\t@left"
   Conditional:
     name: "条件"
-    string: "如果\t@condition\t那么\t@thenbranch\t否则\t@elsebranch"
+    string: "如果\t@left\t那么\t@middle\t否则\t@right"
   Skip:
     name: "注释"
-    string: "注释\t@comment"
+    string: "注释\t@left"
   Loop:
     name: "循环"
     string:
