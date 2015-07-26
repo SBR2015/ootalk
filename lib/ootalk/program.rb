@@ -61,8 +61,8 @@ module OoTalk
         OoTalk::Assignment.new(left, right)
       when 'Add'
         OoTalk::Add.new(left, right)
-      when 'Substract'
-        OoTalk::Substract.new(left, right)
+      when 'Subtract'
+        OoTalk::Subtract.new(left, right)
       when 'Times'
         OoTalk::Times.new(left, right)
       when 'Divide'

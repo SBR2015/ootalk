@@ -14,7 +14,7 @@ require 'ootalk/conditional'
 
 # arithmetic operator
 require 'ootalk/add'
-require 'ootalk/substract'
+require 'ootalk/subtract'
 require 'ootalk/times'
 require 'ootalk/divide'
 require 'ootalk/surplus'

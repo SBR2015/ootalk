@@ -3,7 +3,7 @@ require 'ootalk/loop'
 require 'ootalk/constant'
 require 'ootalk/less_than'
 require 'ootalk/add'
-require 'ootalk/substract'
+require 'ootalk/subtract'
 require 'ootalk/variable'
 require 'ootalk/assignment'
 

@@ -14,7 +14,7 @@ describe 'Ootalk::compound class' do
      # n = 5
   n_eq_5 = OoTalk::Assignment.new(var_n,OoTalk::Constant.new(5))
      # n = n-1
-  n_decrement = OoTalk::Assignment.new(var_n,OoTalk::Substract.new(var_n,OoTalk::Constant.new(1)))
+  n_decrement = OoTalk::Assignment.new(var_n,OoTalk::Subtract.new(var_n,OoTalk::Constant.new(1)))
 
    #  while(n > 0) do
    #  s = s * n
