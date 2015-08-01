@@ -13,10 +13,10 @@ en:
     string: "@left\tdivide by\t@right"
   Surplus:
     name: "Remainder"
-    string: "Remainder after division\t@left\tby\t@right"
+    string: "remainder after division\t@left\tby\t@right"
   Logarithm:
     name: "Logarithm"
-    string: "Logarithm base\t@left\tof\t@right"
+    string: "logarithm base\t@left\tof\t@right"
   Power:
     name: "Exponentiation"
     string: "@left\tpower\t@right"
@@ -53,30 +53,30 @@ en:
   LessThanOrEqualTo:
     name: "Less than or equal to"
     string: "@left\tless than or equal to\t@right"
-  Program:
-    name: "Program"
-    string: "Program"
-  Instruction:
-    name: "Instruction"
-    string: "Instruction"
-  Skip:
-    name: "Skip"
-    string: "Skip"
+  # Program:
+  #   name: "Program"
+  #   string: "program"
+  # Instruction:
+  #   name: "Instruction"
+  #   string: "instruction"
+  # Skip:
+  #   name: "Skip"
+  #   string: "skip"
   Assignment:
     name: "Assignment"
-    string: "Assign\t@right\tto\t@left"
-  Compound:
-    name: "Compound"
-    string: "Compound"
+    string: "assign\t@right\tto\t@left"
+  # Compound:
+  #   name: "Compound"
+  #   string: "compound"
   Loop:
     name: "Loop"
     string: ""
   Conditional:
     name: "Conditional"
-    string: "If\t@left\tthen\t@middle\telse\t@right"
+    string: "if\t@left\tthen\t@middle\telse\t@right"
   Variable:
     name: "Variable"
-    string: "Variable\t@left"
+    string: "variable\t@left"
   Constant:
     name: "Constant"
     string: "@left"
