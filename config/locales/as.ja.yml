@@ -53,21 +53,21 @@ ja:
   LessThanOrEqualTo:
     name: "以下"
     string: "@left\tは\t@right以下"
-  Program:
-    name: "プログラム"
-    string: "プログラム"
-  Instruction:
-    name: "インストラクション"
-    string: "インストラクション"
-  Skip:
-    name: "スキップ"
-    string: "スキップ"
+  # Program:
+  #   name: "プログラム"
+  #   string: "プログラム"
+  # Instruction:
+  #   name: "インストラクション"
+  #   string: "インストラクション"
+  # Skip:
+  #   name: "スキップ"
+  #   string: "スキップ"
   Assignment:
     name: "代入"
-    string: "@rightを@leftに代入する"
-  Compound:
-    name: "複合文"
-    string: "複合文"
+    string: "@right\tを\t@left\tに代入する"
+  # Compound:
+  #   name: "複合文"
+  #   string: "複合文"
   Loop:
     name: "くりかえし"
     string: ""
