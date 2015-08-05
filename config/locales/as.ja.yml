@@ -52,16 +52,16 @@ ja:
     string: "@left\tは\t@right\tより小さい"
   LessThanOrEqualTo:
     name: "以下"
-    string: "@left\tは\t@right以下"
-  # Program:
-  #   name: "プログラム"
-  #   string: "プログラム"
-  # Instruction:
-  #   name: "インストラクション"
-  #   string: "インストラクション"
-  # Skip:
-  #   name: "スキップ"
-  #   string: "スキップ"
+    string: "@left\tは\t@right\t以下"
+  Program:
+    name: "プログラム"
+    string: "プログラム"
+  Instruction:
+    name: "インストラクション"
+    string: "インストラクション"
+  Skip:
+    name: "スキップ"
+    string: "スキップ"
   Assignment:
     name: "代入"
     string: "@right\tを\t@left\tに代入する"
