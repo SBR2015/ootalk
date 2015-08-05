@@ -31,4 +31,9 @@ describe 'OoTalk::Variable' do
     expect(vars3.exec).to be_nil
     expect(vars4.exec).to eq vars1.exec
   end
+  
+  it 'setter' do
+    ass1 = OoTalk::Assignment.new(OoTalk::Variable.new('b'), OoTalk::Constant.new(1))
+    expect(ass1.exec).to be 1
+  end
 end
