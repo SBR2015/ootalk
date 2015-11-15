@@ -78,5 +78,5 @@ ja:
     name: "変数"
     string: "変数\t@left"
   Constant:
-    name: "コンスタント"
+    name: "数字"
     string: "@left"
