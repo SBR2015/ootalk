@@ -14,8 +14,10 @@ module OoTalk
       I18n.locale = locale
 
       # 抽象文法のリストを取得
-      abstract_syntax = YAML.load_file(File.dirname(__FILE__) +
-                                      "/../../config/locales/as.#{I18n.locale}.yml")
+      # abstract_syntax = YAML.load_file(File.dirname(__FILE__) +
+      #                                 "/../../config/locales/as.#{I18n.locale}.yml")
+      load_file = File.expand_path('../../../config/locales', __FILE__) << "/as.#{I18n.locale}.yml"
+      abstract_syntax = YAML.load_file(load_file)
 
       # 抽象文法のクラス一覧を取得
       class_all_lists = abstract_syntax[I18n.locale.to_s].map do |key, _value|
