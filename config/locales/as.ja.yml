@@ -73,7 +73,7 @@ ja:
     string: ""
   Conditional:
     name: "条件文"
-    string: "もし\t@leftならば\t@middle\tそうでなければ\t@right"
+    string: "もし\t@left\tならば\t@middle\tそうでなければ\t@right"
   Variable:
     name: "変数"
     string: "変数\t@left"
