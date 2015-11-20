@@ -8,4 +8,8 @@ describe 'AbstractSyntaxLists' do
     expect(OoTalk::AbstractSyntaxLists.create(:vi)).to be_truthy
     expect(OoTalk::AbstractSyntaxLists.create(:cn)).to be_truthy
   end
+
+  it 'should return error result' do
+    expect(OoTalk::AbstractSyntaxLists.create(:arrrrrrrrrr)).to eq([])
+  end
 end
