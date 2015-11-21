@@ -4,9 +4,9 @@ require 'ootalk/decrement'
 
 describe 'Decrement class' do
   # dec = 10
-  OoTalk::Assignment.new(OoTalk::Variable.new('dec'), OoTalk::Constant.new(10)).exec
+  Ootalk::Assignment.new(Ootalk::Variable.new('dec'), Ootalk::Constant.new(10)).exec
   # Decrementテストの変数の用意
-  let(:dec_1) {OoTalk::Decrement.new(OoTalk::Variable.new('dec'))}
+  let(:dec_1) {Ootalk::Decrement.new(Ootalk::Variable.new('dec'))}
 
   it "new" do
     expect(dec_1).to_not be_nil

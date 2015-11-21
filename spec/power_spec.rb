@@ -2,9 +2,9 @@ require 'spec_helper'
 require 'ootalk/power'
 
 describe 'powers' do
-  let(:powers1) {OoTalk::Power.new(OoTalk::Constant.new(1), OoTalk::Constant.new(2))}
-  let(:powers2) {OoTalk::Power.new(OoTalk::Constant.new(2), OoTalk::Constant.new(3))}
-  let(:powers3) {OoTalk::Power.new(OoTalk::Constant.new(3), OoTalk::Constant.new(0))}
+  let(:powers1) {Ootalk::Power.new(Ootalk::Constant.new(1), Ootalk::Constant.new(2))}
+  let(:powers2) {Ootalk::Power.new(Ootalk::Constant.new(2), Ootalk::Constant.new(3))}
+  let(:powers3) {Ootalk::Power.new(Ootalk::Constant.new(3), Ootalk::Constant.new(0))}
 
   it 'initialize' do
     expect(powers1).to_not be_nil

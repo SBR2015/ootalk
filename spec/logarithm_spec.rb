@@ -3,28 +3,28 @@ require 'ootalk/logarithm'
 
 describe 'logarithms' do
   it 'new' do
-    cons1 = OoTalk::Constant.new(10)
-    cons2 = OoTalk::Constant.new(2)
-    logarithms = OoTalk::Logarithm.new(cons1, cons2)
+    cons1 = Ootalk::Constant.new(10)
+    cons2 = Ootalk::Constant.new(2)
+    logarithms = Ootalk::Logarithm.new(cons1, cons2)
     expect(logarithms).to_not be_nil
   end
 
   it 'exec' do
-    cons1 = OoTalk::Constant.new(10)
-    cons2 = OoTalk::Constant.new(2)
-    cons3 = OoTalk::Constant.new(3)
-    cons4 = OoTalk::Constant.new(8)
-    cons5 = OoTalk::Constant.new(0.2)
-    cons6 = OoTalk::Constant.new(0.04)
-    cons7 = OoTalk::Constant.new(1)
+    cons1 = Ootalk::Constant.new(10)
+    cons2 = Ootalk::Constant.new(2)
+    cons3 = Ootalk::Constant.new(3)
+    cons4 = Ootalk::Constant.new(8)
+    cons5 = Ootalk::Constant.new(0.2)
+    cons6 = Ootalk::Constant.new(0.04)
+    cons7 = Ootalk::Constant.new(1)
 
-    logarithms1 = OoTalk::Logarithm.new(cons1, cons3)
-    logarithms2 = OoTalk::Logarithm.new(cons2, cons4)
-    logarithms3 = OoTalk::Logarithm.new(cons5, cons6)
-    logarithms4 = OoTalk::Logarithm.new(cons1, cons5)
-    logarithms5 = OoTalk::Logarithm.new(cons6, cons3)
-    logarithms6 = OoTalk::Logarithm.new(cons6, cons7)
-    logarithms7 = OoTalk::Logarithm.new(cons1, cons7)
+    logarithms1 = Ootalk::Logarithm.new(cons1, cons3)
+    logarithms2 = Ootalk::Logarithm.new(cons2, cons4)
+    logarithms3 = Ootalk::Logarithm.new(cons5, cons6)
+    logarithms4 = Ootalk::Logarithm.new(cons1, cons5)
+    logarithms5 = Ootalk::Logarithm.new(cons6, cons3)
+    logarithms6 = Ootalk::Logarithm.new(cons6, cons7)
+    logarithms7 = Ootalk::Logarithm.new(cons1, cons7)
      
     expect(logarithms1.exec).to be == 0.47712125471966244
     expect(logarithms2.exec).to be == 3.0
@@ -36,21 +36,21 @@ describe 'logarithms' do
   end
 
     it "to_s" do  
-    cons1 = OoTalk::Constant.new(10)
-    cons2 = OoTalk::Constant.new(2)
-    cons3 = OoTalk::Constant.new(3)
-    cons4 = OoTalk::Constant.new(8)
-    cons5 = OoTalk::Constant.new(0.2)
-    cons6 = OoTalk::Constant.new(0.04)
-    cons7 = OoTalk::Constant.new(1)
+    cons1 = Ootalk::Constant.new(10)
+    cons2 = Ootalk::Constant.new(2)
+    cons3 = Ootalk::Constant.new(3)
+    cons4 = Ootalk::Constant.new(8)
+    cons5 = Ootalk::Constant.new(0.2)
+    cons6 = Ootalk::Constant.new(0.04)
+    cons7 = Ootalk::Constant.new(1)
 
-    logarithms1 = OoTalk::Logarithm.new(cons1, cons3)
-    logarithms2 = OoTalk::Logarithm.new(cons2, cons4)
-    logarithms3 = OoTalk::Logarithm.new(cons5, cons6)
-    logarithms4 = OoTalk::Logarithm.new(cons1, cons5)
-    logarithms5 = OoTalk::Logarithm.new(cons6, cons3)
-    logarithms6 = OoTalk::Logarithm.new(cons6, cons7)
-    logarithms7 = OoTalk::Logarithm.new(cons1, cons7)
+    logarithms1 = Ootalk::Logarithm.new(cons1, cons3)
+    logarithms2 = Ootalk::Logarithm.new(cons2, cons4)
+    logarithms3 = Ootalk::Logarithm.new(cons5, cons6)
+    logarithms4 = Ootalk::Logarithm.new(cons1, cons5)
+    logarithms5 = Ootalk::Logarithm.new(cons6, cons3)
+    logarithms6 = Ootalk::Logarithm.new(cons6, cons7)
+    logarithms7 = Ootalk::Logarithm.new(cons1, cons7)
 
     expect(logarithms1.to_s).to eq 'log10(3)'
     expect(logarithms2.to_s).to eq 'log2(8)'

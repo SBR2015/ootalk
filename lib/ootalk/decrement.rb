@@ -1,7 +1,7 @@
 require 'ootalk/operator'
 require 'ootalk/variable'
 
-module OoTalk
+module Ootalk
   class Decrement < Operator
 
     def initialize(left)
@@ -9,7 +9,7 @@ module OoTalk
     end
 
     def exec
-        OoTalk::Variable.name[@left.to_s] = OoTalk::Variable.name[@left.to_s] - 1
+        Ootalk::Variable.name[@left.to_s] = Ootalk::Variable.name[@left.to_s] - 1
     end
 
     def to_s

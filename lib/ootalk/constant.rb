@@ -1,5 +1,5 @@
-module OoTalk
-  class OoTalk::Constant
+module Ootalk
+  class Ootalk::Constant
 
     private
 

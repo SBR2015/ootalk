@@ -2,18 +2,18 @@ require 'spec_helper'
 require 'ootalk'
 
 describe "Ootalk::Conditional class" do
-  var = OoTalk::Variable.new('a')
-  ass = OoTalk::Assignment.new(var, OoTalk::Constant.new(1))
+  var = Ootalk::Variable.new('a')
+  ass = Ootalk::Assignment.new(var, Ootalk::Constant.new(1))
 
-  equal_1 = OoTalk::EqualTo.new(var, OoTalk::Constant.new(1))
-  not_equal_1 = OoTalk::NotEqual.new(var, OoTalk::Constant.new(1))
+  equal_1 = Ootalk::EqualTo.new(var, Ootalk::Constant.new(1))
+  not_equal_1 = Ootalk::NotEqual.new(var, Ootalk::Constant.new(1))
 
-  increment = OoTalk::Assignment.new(var, OoTalk::Add.new(var, OoTalk::Constant.new(1)))
-  decrement = OoTalk::Assignment.new(var, OoTalk::Subtract.new(var, OoTalk::Constant.new(1)))
+  increment = Ootalk::Assignment.new(var, Ootalk::Add.new(var, Ootalk::Constant.new(1)))
+  decrement = Ootalk::Assignment.new(var, Ootalk::Subtract.new(var, Ootalk::Constant.new(1)))
 
-  cond1 = OoTalk::Conditional.new(equal_1, increment)
-  cond2 = OoTalk::Conditional.new(not_equal_1, increment, decrement)
-  cond3 = OoTalk::Conditional.new(not_equal_1, increment)
+  cond1 = Ootalk::Conditional.new(equal_1, increment)
+  cond2 = Ootalk::Conditional.new(not_equal_1, increment, decrement)
+  cond3 = Ootalk::Conditional.new(not_equal_1, increment)
 
   before :each do
     ass.exec

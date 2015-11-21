@@ -2,8 +2,8 @@ require 'spec_helper'
 require 'ootalk/add'
 
 describe 'Add' do
-  let(:add1) {OoTalk::Add.new(OoTalk::Constant.new(1), OoTalk::Constant.new(2))}
-  let(:add2) {OoTalk::Add.new(OoTalk::Constant.new(2), OoTalk::Constant.new(3))}
+  let(:add1) {Ootalk::Add.new(Ootalk::Constant.new(1), Ootalk::Constant.new(2))}
+  let(:add2) {Ootalk::Add.new(Ootalk::Constant.new(2), Ootalk::Constant.new(3))}
 
   it 'new' do
     expect(add1).to_not be_nil

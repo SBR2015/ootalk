@@ -3,6 +3,6 @@
 require 'ootalk'
 
 # $ bundle exec ruby locales_test.rb
-puts OoTalk::AbstractSyntaxLists.create(:ja)
-puts OoTalk::AbstractSyntaxLists.create(:cn)
-puts OoTalk::AbstractSyntaxLists.create(:en)
+puts Ootalk::AbstractSyntaxLists.create(:ja)
+puts Ootalk::AbstractSyntaxLists.create(:cn)
+puts Ootalk::AbstractSyntaxLists.create(:en)

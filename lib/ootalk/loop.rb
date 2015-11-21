@@ -1,6 +1,6 @@
 require 'ootalk/operator'
 
-module OoTalk
+module Ootalk
   class Loop
     def initialize(left=nil, middle=nil, right=nil)
       @left = left

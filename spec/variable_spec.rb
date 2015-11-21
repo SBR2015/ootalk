@@ -2,11 +2,11 @@ require 'spec_helper'
 require 'ootalk/variable'
 require 'ootalk/assignment'
 
-describe 'OoTalk::Variable' do
-  let(:vars1) {OoTalk::Variable.new('x')}
-  let(:vars2) {OoTalk::Variable.new('y')}
-  let(:vars3) {OoTalk::Variable.new('z')}
-  let(:vars4) {OoTalk::Variable.new('x')}
+describe 'Ootalk::Variable' do
+  let(:vars1) {Ootalk::Variable.new('x')}
+  let(:vars2) {Ootalk::Variable.new('y')}
+  let(:vars3) {Ootalk::Variable.new('z')}
+  let(:vars4) {Ootalk::Variable.new('x')}
 
   it 'initialize' do
     expect(vars1).to_not be_nil
@@ -34,8 +34,8 @@ describe 'OoTalk::Variable' do
   end
 
   it 'self.name=(name)' do
-    OoTalk::Variable.name = 5
-    expect(OoTalk::Variable.name).to eq 5
+    Ootalk::Variable.name = 5
+    expect(Ootalk::Variable.name).to eq 5
   end
 end
 

@@ -9,7 +9,7 @@ require 'ootalk/assignment'
 
 describe 'Loop' do
   it 'new' do
-    lp = OoTalk::Loop.new
+    lp = Ootalk::Loop.new
     expect(lp).to_not be_nil
   end
 
@@ -24,27 +24,27 @@ describe 'Loop' do
  a => 30
 =end
   it 'exec' do
-    cons3 = OoTalk::Constant.new(3)
-    cons10 = OoTalk::Constant.new(10)
+    cons3 = Ootalk::Constant.new(3)
+    cons10 = Ootalk::Constant.new(10)
 
     # i = 0
-    val_i = OoTalk::Variable.new('i')
-    cons0 = OoTalk::Constant.new(0)
-    OoTalk::Assignment.new(val_i, cons0).exec
+    val_i = Ootalk::Variable.new('i')
+    cons0 = Ootalk::Constant.new(0)
+    Ootalk::Assignment.new(val_i, cons0).exec
     # i + 1
-    cons1 = OoTalk::Constant.new(1)
-    incr = OoTalk::Add.new(val_i, cons1)
+    cons1 = Ootalk::Constant.new(1)
+    incr = Ootalk::Add.new(val_i, cons1)
     # i = i + 1
-    assign = OoTalk::Assignment.new(val_i, incr)
+    assign = Ootalk::Assignment.new(val_i, incr)
     # i < 3
-    less_than = OoTalk::LessThan.new(val_i, cons3)
+    less_than = Ootalk::LessThan.new(val_i, cons3)
     # a = 0
-    val_a = OoTalk::Variable.new('a')
-    OoTalk::Assignment.new(val_a, cons0).exec
+    val_a = Ootalk::Variable.new('a')
+    Ootalk::Assignment.new(val_a, cons0).exec
     # a = a + 10
-    add = OoTalk::Add.new(val_a, cons10)
-    results = OoTalk::Assignment.new(val_a, add)
-    lp = OoTalk::Loop.new(less_than, results, assign)
+    add = Ootalk::Add.new(val_a, cons10)
+    results = Ootalk::Assignment.new(val_a, add)
+    lp = Ootalk::Loop.new(less_than, results, assign)
     lp.exec
     expect(val_a.exec).to eq 30
   end
@@ -59,27 +59,27 @@ describe 'Loop' do
  a => 30
 =end
   it 'to_s' do
-    cons3 = OoTalk::Constant.new(3)
-    cons10 = OoTalk::Constant.new(10)
+    cons3 = Ootalk::Constant.new(3)
+    cons10 = Ootalk::Constant.new(10)
 
     # i = 0
-    val_i = OoTalk::Variable.new('i')
-    cons0 = OoTalk::Constant.new(0)
-    OoTalk::Assignment.new(val_i, cons0).exec
+    val_i = Ootalk::Variable.new('i')
+    cons0 = Ootalk::Constant.new(0)
+    Ootalk::Assignment.new(val_i, cons0).exec
     # i + 1
-    cons1 = OoTalk::Constant.new(1)
-    incr = OoTalk::Add.new(val_i, cons1)
+    cons1 = Ootalk::Constant.new(1)
+    incr = Ootalk::Add.new(val_i, cons1)
     # i = i + 1
-    assign = OoTalk::Assignment.new(val_i, incr)
+    assign = Ootalk::Assignment.new(val_i, incr)
     # i < 3
-    less_than = OoTalk::LessThan.new(val_i, cons3)
+    less_than = Ootalk::LessThan.new(val_i, cons3)
     # a = 0
-    val_a = OoTalk::Variable.new('a')
-    OoTalk::Assignment.new(val_a, cons0).exec
+    val_a = Ootalk::Variable.new('a')
+    Ootalk::Assignment.new(val_a, cons0).exec
     # a = a + 10
-    add = OoTalk::Add.new(val_a, cons10)
-    results = OoTalk::Assignment.new(val_a, add)
-    lp = OoTalk::Loop.new(less_than, results, assign)
+    add = Ootalk::Add.new(val_a, cons10)
+    results = Ootalk::Assignment.new(val_a, add)
+    lp = Ootalk::Loop.new(less_than, results, assign)
     expect(lp.to_s).to eq "while true do\n  break unless (i<3)\n  a=(a+10)\n  i=(i+1)\nend"
   end
 end
