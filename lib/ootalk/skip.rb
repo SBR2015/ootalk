@@ -1,6 +1,6 @@
 require 'ootalk/instruction'
 
-module OoTalk
+module Ootalk
   class Skip < Instruction
 
     private

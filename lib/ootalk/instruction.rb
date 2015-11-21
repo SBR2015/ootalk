@@ -1,4 +1,4 @@
-module OoTalk
+module Ootalk
   class Instruction
     def initialize(left = nil, middle = nil, right = nil)
       @left = left

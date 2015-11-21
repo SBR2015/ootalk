@@ -4,9 +4,9 @@ require 'ootalk/increment'
 
 describe 'Increment class' do
   # inc = 0
-  OoTalk::Assignment.new(OoTalk::Variable.new('inc'), OoTalk::Constant.new(0)).exec
+  Ootalk::Assignment.new(Ootalk::Variable.new('inc'), Ootalk::Constant.new(0)).exec
   # Incrementテストの変数の用意
-  let(:inc_1) {OoTalk::Increment.new(OoTalk::Variable.new('inc'))}
+  let(:inc_1) {Ootalk::Increment.new(Ootalk::Variable.new('inc'))}
 
   it "new" do
     expect(inc_1).to_not be_nil

@@ -36,9 +36,6 @@ require 'ootalk/greater_than_or_equal_to'
 require 'ootalk/less_than'
 require 'ootalk/less_than_or_equal_to'
 
-# syntax list
-require 'ootalk/abstract_syntax_lists'
-
 # OoTalk module
-module OoTalk
+module Ootalk
 end

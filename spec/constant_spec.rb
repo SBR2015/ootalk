@@ -1,12 +1,12 @@
 require 'spec_helper'
 require 'ootalk/constant'
 
-describe 'OoTalk::Constant' do
-  let(:cons1) {OoTalk::Constant.new(1)}
-  let(:cons2) {OoTalk::Constant.new(true)}
-  let(:cons3) {OoTalk::Constant.new(false)}
-  let(:cons4) {OoTalk::Constant.new(0.999)}
-  let(:cons5) {OoTalk::Constant.new(-9)}
+describe 'Ootalk::Constant' do
+  let(:cons1) {Ootalk::Constant.new(1)}
+  let(:cons2) {Ootalk::Constant.new(true)}
+  let(:cons3) {Ootalk::Constant.new(false)}
+  let(:cons4) {Ootalk::Constant.new(0.999)}
+  let(:cons5) {Ootalk::Constant.new(-9)}
 
   it 'initialize' do
     expect(cons1).to_not be_nil

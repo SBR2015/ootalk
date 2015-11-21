@@ -37,6 +37,6 @@ jsonstr = init_json(input_data)
 if jsonstr.length == 0
   puts 'error: no input was found.'
 else
-  prog = OoTalk::Program.new(jsonstr)
+  prog = Ootalk::Program.new(jsonstr)
   puts prog.exec
 end

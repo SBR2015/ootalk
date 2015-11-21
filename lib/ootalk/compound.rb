@@ -1,6 +1,6 @@
 require 'ootalk/instruction'
 
-module OoTalk
+module Ootalk
   class Compound < Instruction
     private
      def initialize(left, right)

@@ -1,4 +1,4 @@
-module OoTalk
+module Ootalk
   class Variable
 
     @@name = {}

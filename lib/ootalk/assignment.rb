@@ -1,7 +1,7 @@
 require 'ootalk/instruction'
 require 'ootalk/variable'
 
-module OoTalk
+module Ootalk
   class Assignment < Instruction
     private
 
@@ -14,7 +14,7 @@ module OoTalk
     public
 
     def exec
-      OoTalk::Variable.name[@target.to_s] = @source.exec
+      Ootalk::Variable.name[@target.to_s] = @source.exec
     end
 
     def to_s

@@ -1,6 +1,6 @@
 require 'json'
 
-module OoTalk
+module Ootalk
   class Program
     def initialize(data)
       @body = data
@@ -54,47 +54,47 @@ module OoTalk
     def create_evalobject(key, left, right, _middle)
       case key
       when 'Constant'
-        OoTalk::Constant.new(left)
+        Ootalk::Constant.new(left)
       when 'Variable'
-        OoTalk::Variable.new(left)
+        Ootalk::Variable.new(left)
       when 'Assignment'
-        OoTalk::Assignment.new(left, right)
+        Ootalk::Assignment.new(left, right)
       when 'Add'
-        OoTalk::Add.new(left, right)
+        Ootalk::Add.new(left, right)
       when 'Subtract'
-        OoTalk::Subtract.new(left, right)
+        Ootalk::Subtract.new(left, right)
       when 'Times'
-        OoTalk::Times.new(left, right)
+        Ootalk::Times.new(left, right)
       when 'Divide'
-        OoTalk::Divide.new(left, right)
+        Ootalk::Divide.new(left, right)
       when 'Power'
-        OoTalk::Power.new(left, right)
+        Ootalk::Power.new(left, right)
       when 'Logarithm'
-        OoTalk::Logarithm.new(left, right)
+        Ootalk::Logarithm.new(left, right)
       when 'Surplus'
-        OoTalk::Surplus.new(left, right)
+        Ootalk::Surplus.new(left, right)
       when 'GreaterThan'
-        OoTalk::GreaterThan.new(left, right)
+        Ootalk::GreaterThan.new(left, right)
       when 'GreaterThanOrEqualTo'
-        OoTalk::GreaterThanOrEqualTo.new(left, right)
+        Ootalk::GreaterThanOrEqualTo.new(left, right)
       when 'EqualTo'
-        OoTalk::EqualTo.new(left, right)
+        Ootalk::EqualTo.new(left, right)
       when 'NotEqual'
-        OoTalk::NotEqual.new(left, right)
+        Ootalk::NotEqual.new(left, right)
       when 'LessThan'
-        OoTalk::LessThan.new(left, right)
+        Ootalk::LessThan.new(left, right)
       when 'LessThanOrEqualTo'
-        OoTalk::LessThanOrEqualTo.new(left, right)
+        Ootalk::LessThanOrEqualTo.new(left, right)
       when 'And'
-        OoTalk::And.new(left, right)
+        Ootalk::And.new(left, right)
       when 'Nand'
-        OoTalk::Nand.new(left, right)
+        Ootalk::Nand.new(left, right)
       when 'Or'
-        OoTalk::Or.new(left, right)
+        Ootalk::Or.new(left, right)
       when 'Nor'
-        OoTalk::Nor.new(left, right)
+        Ootalk::Nor.new(left, right)
       when 'Xor'
-        OoTalk::Xor.new(left, right)
+        Ootalk::Xor.new(left, right)
       end
     end
   end

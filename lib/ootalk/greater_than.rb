@@ -1,6 +1,6 @@
 require 'ootalk/operator'
 
-module OoTalk
+module Ootalk
   class GreaterThan < Operator
     def initialize(left, right)
       super

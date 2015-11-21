@@ -2,8 +2,8 @@ require 'spec_helper'
 require 'ootalk/times'
 
 describe 'times' do
-  let(:times1) {OoTalk::Times.new(OoTalk::Constant.new(1), OoTalk::Constant.new(2))}
-  let(:times2) {OoTalk::Times.new(OoTalk::Constant.new(2), OoTalk::Constant.new(3))}
+  let(:times1) {Ootalk::Times.new(Ootalk::Constant.new(1), Ootalk::Constant.new(2))}
+  let(:times2) {Ootalk::Times.new(Ootalk::Constant.new(2), Ootalk::Constant.new(3))}
 
   it 'new' do
     expect(times1).to_not be_nil
