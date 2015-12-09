@@ -2,9 +2,8 @@ require 'ootalk/operator'
 
 module Ootalk
   class Loop
-    def initialize(left=nil, middle=nil, right=nil)
+    def initialize(left=nil, right=nil)
       @left = left
-      @middle = middle
       @right = right
     end
 
