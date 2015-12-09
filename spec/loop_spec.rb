@@ -83,6 +83,6 @@ describe 'Loop' do
     results = Ootalk::Assignment.new(val_a, add)
     lp_com = Ootalk::Compound.new(results,assign)
     lp = Ootalk::Loop.new(less_than,lp_com)
-    expect(lp.to_s).to eq "while true do\n  break unless (i<3)\n  {a=(a+10); i=(i+1)}\nend"
+    expect(lp.to_s).to eq "while true do\n  break unless (i<3)\n　{a=(a+10); i=(i+1)}\nend"
   end
 end

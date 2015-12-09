@@ -51,7 +51,7 @@ describe 'Ootalk::compound class' do
 
   it 'should execute to_s properly' do
     #5 の階乗（式列の表示）
-    expect(com.to_s).to eq "{n=5; {s=1; {while true do\n  break unless (n>0)\n  {s=(s*n); n=(n-1)}\nend; s}}}"
+    expect(com.to_s).to eq "{n=5; {s=1; {while true do\n  break unless (n>0)\n　{s=(s*n); n=(n-1)}\nend; s}}}"
 
   end
 end
