@@ -1,6 +1,10 @@
 # version
 require 'ootalk/version'
 
+# c extension
+require "ootalkext/ootalkext"
+include OotalkExt
+
 # program components
 require 'ootalk/program'
 require 'ootalk/constant'
@@ -35,6 +39,7 @@ require 'ootalk/greater_than'
 require 'ootalk/greater_than_or_equal_to'
 require 'ootalk/less_than'
 require 'ootalk/less_than_or_equal_to'
+
 
 # OoTalk module
 module Ootalk
