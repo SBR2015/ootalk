@@ -78,5 +78,5 @@ Desktop.ini
 
 *.bundle
 *.o
-Makefile.idea
+.idea
 Makefile
