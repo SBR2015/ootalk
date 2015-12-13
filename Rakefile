@@ -10,7 +10,7 @@ end
 
 spec = Gem::Specification.load('ootalk.gemspec')
 Rake::ExtensionTask.new('ootalkext', spec) do |ext|
-  ext.lib_dir = 'lib/ootalkext'
+  ext.lib_dir = 'lib/ootalk'
 end
 
 task default: :spec

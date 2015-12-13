@@ -2,7 +2,7 @@
 require 'ootalk/version'
 
 # c extension
-require "ootalkext/ootalkext"
+require "ootalk/ootalkext"
 include OotalkExt
 
 # program components

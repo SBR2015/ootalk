@@ -43,5 +43,11 @@ describe 'NotOr' do
       Ootalk::Constant.new(0)
     )
     expect(no.exec).to be_truthy
+
+    no = Ootalk::Nor.new(
+      Ootalk::Constant.new("test"),
+      Ootalk::Constant.new("test2")
+    )
+    expect(no.exec).to be_falsey
   end
 end
