@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ootalk (0.4.0)
+    ootalk (0.5.0)
 
 GEM
   remote: https://rubygems.org/
@@ -12,6 +12,8 @@ GEM
     docile (1.1.5)
     json (1.8.3)
     rake (10.4.2)
+    rake-compiler (0.9.5)
+      rake
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -39,6 +41,7 @@ DEPENDENCIES
   codeclimate-test-reporter (~> 0.4)
   ootalk!
   rake (~> 10.0)
+  rake-compiler (~> 0.9.5)
   rspec (~> 3.4)
 
 BUNDLED WITH

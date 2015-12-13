@@ -2,6 +2,7 @@ require 'ootalk/operator'
 
 module Ootalk
   class Add < Operator
+    
     def initialize(left, right)
       super
       @operator = '+'

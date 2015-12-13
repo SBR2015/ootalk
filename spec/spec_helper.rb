@@ -19,6 +19,7 @@
 
 require 'codeclimate-test-reporter'
 require 'ootalk/constant'
+require 'ootalk/ootalkext'
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

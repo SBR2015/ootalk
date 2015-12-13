@@ -21,5 +21,9 @@ describe 'NotAnd' do
     expect(na.exec).to be_truthy
     na = Ootalk::Nand.new(Ootalk::Constant.new(false), Ootalk::Constant.new(false))
     expect(na.exec).to be_truthy
+    na = Ootalk::Nand.new(Ootalk::Constant.new(0), Ootalk::Constant.new(0))
+    expect(na.exec).to be_truthy
+    na = Ootalk::Nand.new(Ootalk::Constant.new("test"), Ootalk::Constant.new("test2"))
+    expect(na.exec).to be_falsey
   end
 end

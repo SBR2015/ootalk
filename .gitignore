@@ -75,3 +75,8 @@ Desktop.ini
 /.bin/
 
 /pkg
+
+*.bundle
+*.o
+.idea
+Makefile
