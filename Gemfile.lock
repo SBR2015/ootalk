@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ootalk (0.5.0)
+    ootalk (0.5.1)
 
 GEM
   remote: https://rubygems.org/

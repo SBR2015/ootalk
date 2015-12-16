@@ -1,14 +1,14 @@
 #include "ruby.h"
 
 // prototype
-void Init_ootalkext();
+void Init_ootalkc();
 void prepare_int(VALUE a, int* result);
 static VALUE nand(VALUE klass, VALUE a, VALUE b);
 static VALUE nor(VALUE klass, VALUE a, VALUE b);
 
 void
-Init_ootalkext() {
-  VALUE mOotalk = rb_define_module("OotalkExt");
+Init_ootalkc() {
+  VALUE mOotalk = rb_define_module("OotalkC");
   rb_define_method(mOotalk, "ext_nand", nand, 2);
   rb_define_method(mOotalk, "ext_nor", nor, 2);
 }

@@ -15,8 +15,8 @@ Gem::Specification.new do |spec|
   spec.license       = 'MIT'
   spec.files         = Dir.glob("ext/**/*.{c,rb}") + Dir.glob("lib/**/*.rb")
   spec.bindir        = 'bin'
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.extensions    = %w[ext/ootalkext/extconf.rb]
+  spec.executables   = %w[ootalk] 
+  spec.extensions    = %w[ext/ootalkc/extconf.rb]
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 1.9'

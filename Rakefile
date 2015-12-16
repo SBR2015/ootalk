@@ -9,7 +9,7 @@ end
 
 
 spec = Gem::Specification.load('ootalk.gemspec')
-Rake::ExtensionTask.new('ootalkext', spec) do |ext|
+Rake::ExtensionTask.new('ootalkc', spec) do |ext|
   ext.lib_dir = 'lib/ootalk'
 end
 
