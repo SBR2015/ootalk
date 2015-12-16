@@ -7,13 +7,7 @@ begin
 rescue LoadError
 end
 
-
 spec = Gem::Specification.load('ootalk.gemspec')
-
-# add your default gem packing task
-Gem::PackageTask.new(spec) do |pkg|
-end
-
 Rake::ExtensionTask.new('ootalkc', spec)
 
 task default: :spec
