@@ -1,35 +1,63 @@
 [{
-	"Program": {
-		"GreaterThan": {
-			"Left": {
-				"Constant": {
-					"Left": 2
-				}
-			},
-			"Right": {
-				"Constant": {
-					"Left": 3
-				}
-			}
+    "Program": {
+	"GreaterThan": {
+	    "Left": {
+		"Constant": {
+		    "Left": 2
 		}
+	    },
+	    "Right": {
+		"Constant": {
+		    "Left": 3
+		}
+	    }
 	}
+    }
 }, {
-	"Program": {
-		"Conditional": {
-			"Left": {
-				"GreaterThan": {
-					"Left": {
-						"Constant": {
-							"Left": 3
-						}
-					},
-					"Right": {
-						"Constant": {
-							"Left": 2
-						}
-					}
-				}
+    "Program": {
+	"Conditional": {
+	    "Left": {
+		"GreaterThan": {
+		    "Left": {
+			"Constant": {
+			    "Left": 3
 			}
+		    },
+		    "Right": {
+			"Constant": {
+			    "Left": 2
+			}
+		    }
 		}
-	}
+	    },
+            "Middle": {
+                "Add": {
+                    "Left": {
+                        "Constant": {
+                            "Left": 2
+                        }
+                    },
+                    "Right": {
+                        "Constant": {
+                            "Left": 3
+                        }
+                    }
+                }
+            },
+            "Right": {
+                "Add": {
+                    "Left": {
+                        "Constant": {
+                            "Left": 4
+                        }
+                    },
+                    "Right": {
+                        "Constant": {
+                            "Left": 5
+                        }
+                    }
+                }
+            }
+        }
+    }
 }]

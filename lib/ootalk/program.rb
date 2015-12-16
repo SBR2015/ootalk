@@ -55,7 +55,7 @@ module Ootalk
       @result_dict.push(result);
     end
 
-    def create_evalobject(key, left, right, _middle)
+    def create_evalobject(key, left, right, middle)
       case key
       when 'Constant'
         Ootalk::Constant.new(left)
@@ -99,6 +99,8 @@ module Ootalk
         Ootalk::Nor.new(left, right)
       when 'Xor'
         Ootalk::Xor.new(left, right)
+      when 'Conditional'
+        Ootalk::Conditional.new(left, middle, right)
       end
     end
   end

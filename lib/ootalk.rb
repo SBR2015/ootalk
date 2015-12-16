@@ -2,8 +2,8 @@
 require 'ootalk/version'
 
 # c extension
-require "ootalk/ootalkext"
-include OotalkExt
+require "ootalk/ootalkc"
+include OotalkC
 
 # program components
 require 'ootalk/program'

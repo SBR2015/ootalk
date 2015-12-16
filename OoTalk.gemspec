@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.files         = Dir.glob("ext/**/*.{c,rb}") + Dir.glob("lib/**/*.rb")
   spec.bindir        = 'bin'
   spec.executables   = %w[ootalk] 
-  spec.extensions    = %w[ext/ootalkext/extconf.rb]
+  spec.extensions    = %w[ext/ootalkc/extconf.rb]
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 1.9'
