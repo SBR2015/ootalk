@@ -9,8 +9,11 @@ end
 
 
 spec = Gem::Specification.load('ootalk.gemspec')
-Rake::ExtensionTask.new('ootalkc', spec) do |ext|
-  ext.lib_dir = 'lib/ootalk'
+
+# add your default gem packing task
+Gem::PackageTask.new(spec) do |pkg|
 end
+
+Rake::ExtensionTask.new('ootalkc', spec)
 
 task default: :spec
