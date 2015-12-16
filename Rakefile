@@ -7,10 +7,7 @@ begin
 rescue LoadError
 end
 
-
 spec = Gem::Specification.load('ootalk.gemspec')
-Rake::ExtensionTask.new('ootalkc', spec) do |ext|
-  ext.lib_dir = 'lib/ootalk'
-end
+Rake::ExtensionTask.new('ootalkc', spec)
 
 task default: :spec

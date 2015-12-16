@@ -2,7 +2,7 @@
 require 'ootalk/version'
 
 # c extension
-require "ootalk/ootalkc"
+require "ootalkc"
 include OotalkC
 
 # program components
