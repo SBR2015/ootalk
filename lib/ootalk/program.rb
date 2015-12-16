@@ -36,12 +36,16 @@ module Ootalk
       return dict unless dict.instance_of?(Hash)
       key = dict.keys[0]
       value = dict[key]
-      left = evaluate(value['Left'])
-      right = evaluate(value['Right'])
-      middle = evaluate(value['Middle'])
-      evalobj = create_evalobject(key, left, right, middle)
-      setresult(evalobj)
-      evalobj
+      if value.instance_of?(Array)
+        parse(value)
+      else
+        left = evaluate(value['Left'])
+        right = evaluate(value['Right'])
+        middle = evaluate(value['Middle'])
+        evalobj = create_evalobject(key, left, right, middle)
+        setresult(evalobj)
+        evalobj
+      end
     end
 
     def setresult(evalobj)

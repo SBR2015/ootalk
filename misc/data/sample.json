@@ -1,18 +1,35 @@
-[
-    {
-        "Program":{
-            "GreaterThan":{
-                "Left":{
-                    "Constant":{
-                        "Left":2
-                    }
-                },
-                "Right":{
-                    "Constant":{
-                        "Left":3
-                    }
-                }
-            }
-        }
-    }
-]
+[{
+	"Program": {
+		"GreaterThan": {
+			"Left": {
+				"Constant": {
+					"Left": 2
+				}
+			},
+			"Right": {
+				"Constant": {
+					"Left": 3
+				}
+			}
+		}
+	}
+}, {
+	"Program": {
+		"Conditional": {
+			"Left": {
+				"GreaterThan": {
+					"Left": {
+						"Constant": {
+							"Left": 3
+						}
+					},
+					"Right": {
+						"Constant": {
+							"Left": 2
+						}
+					}
+				}
+			}
+		}
+	}
+}]
