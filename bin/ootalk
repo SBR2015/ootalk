@@ -38,5 +38,5 @@ if jsonstr.length == 0
   puts 'error: no input was found.'
 else
   prog = Ootalk::Program.new(jsonstr)
-  puts prog.exec
+  puts prog.to_s
 end
