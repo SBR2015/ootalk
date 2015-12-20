@@ -49,10 +49,13 @@ module Ootalk
     end
 
     def setresult(evalobj)
-      result = {}
-      result['exec'] = evalobj.to_s
-      result['result'] = evalobj.respond_to?(:exec) ? evalobj.exec : evalobj
-      @result_dict.push(result);
+      begin
+        result = {}
+        result['exec'] = evalobj.to_s
+        result['result'] = evalobj.respond_to?(:exec) ? evalobj.exec : evalobj
+        @result_dict.push(result);
+      rescue
+      end 
     end
 
     def create_evalobject(key, left, right, middle)
