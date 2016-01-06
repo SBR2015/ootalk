@@ -104,6 +104,8 @@ module Ootalk
         Ootalk::Xor.new(left, right)
       when 'Conditional'
         Ootalk::Conditional.new(left, middle, right)
+      when 'Loop'
+        Ootalk::Loop.new(left, right)
       end
     end
   end
