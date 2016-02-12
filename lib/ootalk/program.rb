@@ -51,6 +51,7 @@ module Ootalk
     def setresult(evalobj)
       begin
         result = {}
+        result['name'] = evalobj.class.name.split("::")[-1]
         result['exec'] = evalobj.to_s
         result['result'] = evalobj.respond_to?(:exec) ? evalobj.exec : evalobj
         @result_dict.push(result);

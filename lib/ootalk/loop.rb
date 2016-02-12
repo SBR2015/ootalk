@@ -1,7 +1,8 @@
-require 'ootalk/operator'
+# coding: utf-8
+require 'ootalk/instruction'
 
 module Ootalk
-  class Loop
+  class Loop < Instruction
     def initialize(left=nil, right=nil)
       @left = left
       @right = right

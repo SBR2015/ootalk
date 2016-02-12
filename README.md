@@ -1,6 +1,8 @@
 Ootalk
 ========
 
+[![Join the chat at https://gitter.im/SBR2015/ootalk](https://badges.gitter.im/SBR2015/ootalk.svg)](https://gitter.im/SBR2015/ootalk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/SBR2015/ootalk.svg?branch=master)](https://travis-ci.org/SBR2015/ootalk)
 [![Code Climate](https://codeclimate.com/github/SBR2015/OoTalk/badges/gpa.svg)](https://codeclimate.com/github/SBR2015/OoTalk)
 [![Test Coverage](https://codeclimate.com/github/SBR2015/OoTalk/badges/coverage.svg)](https://codeclimate.com/github/SBR2015/OoTalk/coverage)
