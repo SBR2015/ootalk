@@ -6,6 +6,7 @@ require 'ootalk/add'
 require 'ootalk/subtract'
 require 'ootalk/variable'
 require 'ootalk/assignment'
+require 'ootalk/compound'
 
 describe 'Loop' do
   it 'new' do
@@ -44,7 +45,8 @@ describe 'Loop' do
     # a = a + 10
     add = Ootalk::Add.new(val_a, cons10)
     results = Ootalk::Assignment.new(val_a, add)
-    lp = Ootalk::Loop.new(less_than, results, assign)
+    lp_com = Ootalk::Compound.new(results,assign)
+    lp = Ootalk::Loop.new(less_than, lp_com)
     lp.exec
     expect(val_a.exec).to eq 30
   end
@@ -79,7 +81,8 @@ describe 'Loop' do
     # a = a + 10
     add = Ootalk::Add.new(val_a, cons10)
     results = Ootalk::Assignment.new(val_a, add)
-    lp = Ootalk::Loop.new(less_than, results, assign)
-    expect(lp.to_s).to eq "while true do\n  break unless (i<3)\n  a=(a+10)\n  i=(i+1)\nend"
+    lp_com = Ootalk::Compound.new(results,assign)
+    lp = Ootalk::Loop.new(less_than,lp_com)
+    expect(lp.to_s).to eq "while true do\n  break unless (i<3)\n　{a=(a+10); i=(i+1)}\nend"
   end
 end
