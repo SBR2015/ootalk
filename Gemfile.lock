@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ootalk (0.5.2)
+    ootalk (0.5.3)
 
 GEM
   remote: https://rubygems.org/
@@ -45,4 +45,4 @@ DEPENDENCIES
   rspec (~> 3.4)
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

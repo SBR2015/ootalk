@@ -15,6 +15,7 @@ require 'ootalk/operator'
 require 'ootalk/assignment'
 require 'ootalk/compound'
 require 'ootalk/conditional'
+require 'ootalk/loop'
 
 # arithmetic operator
 require 'ootalk/add'
